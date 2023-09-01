@@ -49,7 +49,7 @@ Criar uma solução computacional (CRUD) de um sistema de gerenciamento de traba
 ## Tecnologias Utilizadas
 
 * [Java](https://www.java.com/pt-BR/)
-* [JDBC]()
+* [JDBC](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/)
 * [Git/Github (Controle de versão)](https://github.com/)
 * [VsCode](https://code.visualstudio.com/)
 
