@@ -44,6 +44,15 @@ Criar uma solução computacional (CRUD) de um sistema de gerenciamento de traba
 * Banco de Dados Relacional;
 * Documentações (manual de usuário e instruções de instalação).
 
+<span id="Tecnologias"></span>
+
+## Tecnologias Utilizadas
+
+* [Java](https://www.java.com/pt-BR/)
+* [JDBC]()
+* [Git/Github (Controle de versão)](https://github.com/)
+* [VsCode](https://code.visualstudio.com/)
+
 <span id="Product BackLog"></span>
 
 ## Product BackLog
