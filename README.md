@@ -59,10 +59,10 @@ Criar uma solução computacional (CRUD) de um sistema de gerenciamento de traba
 
 | ID   | User Stories                                                 | Épico                       | Sprint                                                    | Prioridade |
 | ---- | ------------------------------------------------------------ | --------------------------- | --------------------------------------------------------- | ---------- |
-| 1 | Importação de informações de alunos, orientadores e TGs | Importar Dados | - | Essencial |
-| 2 | Lançamento de notas de atividades; | Lançar Notas | - | Essencial |
-| 3 | Gestão de alunos, orientadores, TGs e entregas | Gestão de Dados | - | Essencial |
-|4 | Geração de relatórios para acompanhamento de entregas, agendamento de bancas de defesa, fechamento de semestre e transporte de notas | Gerar Relatórios | - | Essencial |
+| 1 | Como Professor deseji Importar informações de alunos, orientadores e TGs | Importar Dados | - | Essencial |
+| 2 | Como Professor desejo realizar lançamentos de notas de atividades; | Lançar Notas | - | Essencial |
+| 3 | Como professor realizar a Gestão de alunos, orientadores, TGs e entregas | Gestão de Dados | - | Essencial |
+|4 | Como Professor desejo gerar relatórios para acompanhamento de entregas, agendamento de bancas de defesa, fechamento de semestre e transporte de notas | Gerar Relatórios | - | Essencial |
 
 
 <span id="Cronograma"></span>
