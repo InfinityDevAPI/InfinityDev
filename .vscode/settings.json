@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "Aplicação Java/GerenciamentoTG/lib/opencsv-5.8.jar"
+    ]
+}
