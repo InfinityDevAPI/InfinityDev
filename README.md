@@ -60,10 +60,10 @@ Criar uma solução computacional (CRUD) de um sistema de gerenciamento de traba
 | ID   | User Stories                                                 | Épico                       | Sprint                                                    | Prioridade |
 | ---- | ------------------------------------------------------------ | --------------------------- | --------------------------------------------------------- | ---------- |
 | 1 | Como professor, eu quero poder importar informações sobre os alunos, orientadores e TGs via arquivo csv contendo os dados, para manter registros precisos.| Importar Dados de Alunos Via Arquivo CSV | - | 1 |
-| 4 | Como professor, eu quero poder lançar notas para cada aluno, associando-as a alunos específicos e atividades específicas, para avaliar o desempenho dos alunos. | Lançar Notas de Entrega | - | 3 |
-| 5 | Como professor, eu quero poder adicionar e editar informações sobre as entregas dos alunos, incluindo datas, status e feedbacks, para monitorar o progresso dos TGs. | Gerenciar  Entregas dos Alunos| - | 2 |
-| 6 | Como professor, eu quero poder gerar relatórios sobre as entregas dos alunos, para acompanhar o progresso dos TGs. | Gerar Relatórios de Entregas | - | 4 |
-| 7 | Como professor, eu quero documentações detalhadas, incluindo um manual de usuário e instruções de instalação, para facilitar o uso e a manutenção do sistema.| Criar Documentação | - | 5 |
+| 2 | Como professor, eu quero poder lançar notas para cada aluno, associando-as a alunos específicos e atividades específicas, para avaliar o desempenho dos alunos. | Lançar Notas de Entrega | - | 3 |
+| 3 | Como professor, eu quero poder adicionar e editar informações sobre as entregas dos alunos, incluindo datas, status e feedbacks, para monitorar o progresso dos TGs. | Gerenciar  Entregas dos Alunos| - | 2 |
+| 4 | Como professor, eu quero poder gerar relatórios sobre as entregas dos alunos, para acompanhar o progresso dos TGs. | Gerar Relatórios de Entregas | - | 4 |
+| 5 | Como professor, eu quero documentações detalhadas, incluindo um manual de usuário e instruções de instalação, para facilitar o uso e a manutenção do sistema.| Criar Documentação | - | 5 |
 
 
 <span id="Cronograma"></span>
