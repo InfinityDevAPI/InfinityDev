@@ -1,6 +1,11 @@
 {
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "Aplicação Java/GerenciamentoTG/lib/opencsv-5.8.jar"
+        "Aplicação Java/GerenciamentoTG/lib/opencsv-5.8.jar",
+        "c:\\Users\\miche\\Documents\\commons-lang3-3.13.0\\commons-lang3-3.13.0.jar",
+        "c:\\Users\\miche\\Documents\\commons-lang3-3.13.0\\commons-lang3-3.13.0-javadoc.jar",
+        "c:\\Users\\miche\\Documents\\commons-lang3-3.13.0\\commons-lang3-3.13.0-sources.jar",
+        "c:\\Users\\miche\\Documents\\commons-lang3-3.13.0\\commons-lang3-3.13.0-tests.jar",
+        "c:\\Users\\miche\\Documents\\commons-lang3-3.13.0\\commons-lang3-3.13.0-test-sources.jar"
     ]
 }
