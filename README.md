@@ -1,8 +1,8 @@
 # InfintyDev
 Projeto API 2° semestre Banco de Dados
 
+![1695502012124](https://github.com/InfinityDevAPI/InfintyDev/assets/127407369/1382fb39-4880-443b-bb4d-3f2f0e07ad37)
 
-![Alt text](image.png)
 
 
 <span id="Equipe"></span> 
