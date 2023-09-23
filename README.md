@@ -59,14 +59,11 @@ Criar uma solução computacional (CRUD) de um sistema de gerenciamento de traba
 
 | ID   | User Stories                                                 | Épico                       | Sprint                                                    | Prioridade |
 | ---- | ------------------------------------------------------------ | --------------------------- | --------------------------------------------------------- | ---------- |
-| 1 | Como professor, eu quero poder importar informações sobre os alunos, incluindo nome, e-mail e disciplinas de TG, para que possamos manter registros precisos.| Importar Dados de Alunos Via Arquivo CSV | - | 1 |
-| 2 | Como professor , eu quero poder importar informações sobre os orientadores, incluindo nome e e-mail, para que possa ser associado aos alunos. | Importar Dados de Orientadores Via Arquivo CSV  | - | 3 |
-| 3 | Como professor , eu quero poder importar informações sobre os TGs, incluindo tipo, problema a ser tratado, etc., para que possamos acompanhar o progresso dos alunos. | Importar Dados de TG Via Arquivo CSV | - | 2 |
-|4 | Como professor, eu quero poder lançar notas para cada dos alunos, associando-as a alunos específicos e atividades específicas, para avaliar o desempenho dos alunos. | Lançar Notas de Entrega | - | 4 |
-| 5 | Como professor, eu quero poder adicionar, editar e remover informações sobre as entregas dos alunos, incluindo datas, status e feedbacks dados aos alunos para monitorar o progresso dos TGs. | Gerenciar  Entregas dos Alunos| - | 5 |
-| 6 | Como desenvolvedor, eu quero criar o sistema em Java, sem a necessidade de frameworks específicos, para garantir flexibilidade e controle.. | Desenvolver o Sistema em Java | - | 7 |
-| 7 | Como professor, eu quero poder gerar relatórios sobre as entregas dos alunos, para que possamos acompanhar o progresso dos TGs. | Gerar Relatórios de Entregas | - | 6 |
-| 8 | Como professor, eu quero documentações detalhadas, incluindo um manual de usuário e instruções de instalação, para facilitar o uso e a manutenção do sistema.| Criar Documentação | - | 8 |
+| 1 | Como professor, eu quero poder importar informações sobre os alunos, orientadores e TGs via arquivo csv contendo os dados, para manter registros precisos.| Importar Dados de Alunos Via Arquivo CSV | - | 1 |
+| 2 | Como professor, eu quero poder lançar notas para cada aluno, associando-as a alunos específicos e atividades específicas, para avaliar o desempenho dos alunos. | Lançar Notas de Entrega | - | 3 |
+| 3 | Como professor, eu quero poder adicionar e editar informações sobre as entregas dos alunos, incluindo datas, status e feedbacks, para monitorar o progresso dos TGs. | Gerenciar  Entregas dos Alunos| - | 2 |
+| 4 | Como professor, eu quero poder gerar relatórios sobre as entregas dos alunos, para acompanhar o progresso dos TGs. | Gerar Relatórios de Entregas | - | 4 |
+| 5 | Como professor, eu quero documentações detalhadas, incluindo um manual de usuário e instruções de instalação, para facilitar o uso e a manutenção do sistema.| Criar Documentação | - | 5 |
 
 
 <span id="Cronograma"></span>
