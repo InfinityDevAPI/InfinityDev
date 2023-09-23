@@ -1,7 +1,8 @@
 # InfintyDev
 Projeto API 2° semestre Banco de Dados
+Sprint-1
+![1695502012124](https://github.com/InfinityDevAPI/InfintyDev/assets/127407369/5186c5f7-fe30-439f-89f9-9450a0c96401)
 
-![image](https://github.com/InfinityDevAPI/InfintyDev/assets/117935105/59ca91a3-e439-4f8e-bd88-81df62b4279c)
 
 <span id="Equipe"></span> 
 
