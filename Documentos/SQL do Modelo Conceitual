@@ -9,6 +9,7 @@ CREATE TABLE aluno
 CREATE TABLE orientador 
 ( 
  nome INT,  
+ emailFatec INT PRIMARY KEY,  
 ); 
 
 CREATE TABLE tg 
