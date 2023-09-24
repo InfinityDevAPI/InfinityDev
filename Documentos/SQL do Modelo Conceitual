@@ -1,0 +1,70 @@
+CREATE TABLE aluno 
+( 
+ nome INT,  
+ emailFatec INT PRIMARY KEY,  
+ emailFornecido INT,  
+ idorientador INT,  
+); 
+
+CREATE TABLE orientador 
+( 
+ nome INT,  
+); 
+
+CREATE TABLE tg 
+( 
+ tipo INT,  
+ id INT PRIMARY KEY,  
+ empresa_envolvida INT,  
+ problema INT,  
+ disciplina INT,  
+); 
+
+CREATE TABLE entrega 
+( 
+ id INT PRIMARY KEY,  
+ descricao INT,  
+ data_entrega INT,  
+); 
+
+CREATE TABLE turma 
+( 
+ id INT PRIMARY KEY,  
+ semestre_ano INT,  
+); 
+
+CREATE TABLE Rel 
+( 
+ emailFatec INT PRIMARY KEY,  
+ id INT PRIMARY KEY,  
+); 
+
+CREATE TABLE Rel1 
+( 
+ emailFatec INT PRIMARY KEY,  
+ id INT PRIMARY KEY,  
+); 
+
+CREATE TABLE Rel11 
+( 
+ id INT PRIMARY KEY,  
+ id INT PRIMARY KEY,  
+); 
+
+CREATE TABLE Rel111 
+( 
+ feedback INT,  
+ nota INT,  
+ id INT PRIMARY KEY,  
+ emailFatec INT PRIMARY KEY,  
+); 
+
+ALTER TABLE aluno ADD FOREIGN KEY(idorientador) REFERENCES orientador (idorientador)
+ALTER TABLE Rel ADD FOREIGN KEY(emailFatec) REFERENCES aluno (emailFatec)
+ALTER TABLE Rel ADD FOREIGN KEY(id) REFERENCES tg (id)
+ALTER TABLE Rel1 ADD FOREIGN KEY(emailFatec) REFERENCES aluno (emailFatec)
+ALTER TABLE Rel1 ADD FOREIGN KEY(id) REFERENCES turma (id)
+ALTER TABLE Rel11 ADD FOREIGN KEY(id) REFERENCES entrega (id)
+ALTER TABLE Rel11 ADD FOREIGN KEY(id) REFERENCES turma (id)
+ALTER TABLE Rel111 ADD FOREIGN KEY(id) REFERENCES entrega (id)
+ALTER TABLE Rel111 ADD FOREIGN KEY(emailFatec) REFERENCES aluno (emailFatec)
