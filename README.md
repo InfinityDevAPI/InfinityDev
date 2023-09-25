@@ -4,9 +4,10 @@
 
 <p align="center">
   <a href ="#dart-objetivo-sprint-1"> Objetivo </a>  •
-  <a href="#computer-mockup"> Mockup </a> •
-  <a href="#electric_plug-wireframe"> Wireframe </a> • 
+  <a href="#computer-mockup-das-telas"> Mockup </a> •
+  <a href="#electric_plug-wireframe-das-telas"> Wireframe </a> • 
   <a href ="#chart_with_upwards_trend-fluxograma"> Fluxograma </a>  •
+  <a href="#bulb-modelo-conceitual-e-lógico-do-bd"> Modelos do BD </a> •
   <a href="#chart_with_downwards_trend-burndown"> Burndown </a> •
   <a href="#bookmark-tecnologias-utilizadas"> Tecnologias Utilizadas </a>
 </p>
@@ -19,18 +20,24 @@
 > * Estrutura de Banco de Dados: Definimos a estrutura inicial do banco de dados, fornecendo uma base sólida para o armazenamento de dados essenciais do projeto.
 > * Modelagem de Dados: Realizamos uma modelagem de dados detalhada, incluindo diagramas lógicos e conceituais, um diagrama de classe UML e um Modelo Entidade-Relacionamento (MER). Esses recursos ajudarão na compreensão da estrutura do sistema.
 
-## :computer: Mockup
+## :computer: Mockup das Telas
 <p><img src="https://github.com/InfinityDevAPI/InfintyDev/assets/111203231/a7c2866d-01b2-4584-9707-c33c92838ec2" alt="Capa" style="width:600px;height:350px;"></p>
 
-##### Link para acesso: https://www.canva.com/design/DAFvZEL_vDg/wDxx2ZbSzzpDsn6NBAnS2A/edit?utm_content=DAFvZEL_vDg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+> * [Link para acesso do Mockup](https://www.canva.com/design/DAFvZEL_vDg/wDxx2ZbSzzpDsn6NBAnS2A/edit?utm_content=DAFvZEL_vDg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
-## :electric_plug: Wireframe
+## :electric_plug: Wireframe das Telas
 <p><img src="https://github.com/InfinityDevAPI/InfintyDev/assets/111203231/36175ceb-2ec1-4c12-ad8c-5bba062de37b" alt="Wireframe" style="width:600px;height:350px;"></p>
 
-##### Link para acesso: https://www.figma.com/file/JzcC7EtloLaRUFP8QMep7G/Infinity-Dev?type=design&node-id=0%3A1&mode=design&t=nVdBcSIY4OiZ1XNT-1
+> * [Link para acesso do Wireframe](https://www.figma.com/file/JzcC7EtloLaRUFP8QMep7G/Infinity-Dev?type=design&node-id=0%3A1&mode=design&t=nVdBcSIY4OiZ1XNT-1)
 
 ## :chart_with_upwards_trend: Fluxograma
 <p><img src="https://github.com/InfinityDevAPI/InfintyDev/assets/111203231/17c8421e-3db8-4f80-87c6-ac923ae3e3d9" alt="Capa" style="width:600px;height:350px;"></p>
+
+## :bulb: Modelo Conceitual e Lógico do BD
+<p>
+  <img src="https://github.com/InfinityDevAPI/InfintyDev/assets/111203231/ec72e776-7231-4357-8bc3-64a5bf9e508d" alt="Capa" style="width:500px;height:350px;">
+  <img src="https://github.com/InfinityDevAPI/InfintyDev/assets/111203231/ea31684e-0e03-4594-a901-b2bc44e7058d" alt="Capa" style="width:500px;height:350px;">
+</p>
 
 ## :chart_with_downwards_trend: Burndown
 <p><img src="https://github.com/InfinityDevAPI/InfintyDev/assets/111203231/6417383d-4c2d-4745-8b99-9ed7474bde04" alt="Capa" style="width:600px;height:350px;"></p>
