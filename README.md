@@ -1,84 +1,45 @@
-# InfintyDev
-Projeto API 2° semestre Banco de Dados
+# <p align = "center"> Infinity Dev - API 2º Semestre - BD 2023 - Sprint 1
 
-![1695502012124](https://github.com/InfinityDevAPI/InfintyDev/assets/127407369/1382fb39-4880-443b-bb4d-3f2f0e07ad37)
+<p align = "center"><img src="https://github.com/InfinityDevAPI/InfintyDev/assets/111203231/361c4683-551a-4763-b88c-5e6c0852e401" alt="Capa" style="width:600px;height:350px;"></p>
 
+<p align="center">
+  <a href ="#dart-objetivo-sprint-1"> Objetivo </a>  •
+  <a href="#computer-mockup"> Mockup </a> •
+  <a href="#electric_plug-wireframe"> Wireframe </a> • 
+  <a href ="#chart_with_upwards_trend-fluxograma"> Fluxograma </a>  •
+  <a href="#chart_with_downwards_trend-burndown"> Burndown </a> •
+  <a href="#bookmark-tecnologias-utilizadas"> Tecnologias Utilizadas </a>
+</p>
 
+## :dart: Objetivo Sprint 1
+> * Planejamento e Organização: Iniciamos a sprint com sessões de planejamento, onde definimos metas e prioridades claras. Estabelecemos um cronograma para reuniões regulares e feedback, garantindo uma comunicação eficaz.
+> * Configuração do Ambiente de Desenvolvimento: Todos os membros da equipe agora têm um ambiente de desenvolvimento configurado e pronto para uso, garantindo que todos possam contribuir de maneira eficiente.
+> * Reuniões Iniciais de Requisitos: Realizamos reuniões detalhadas para definir os requisitos e especificações do sistema proposto. Por meio dessas reuniões, definimos o Product Backlog com apoio do nosso PO em contato com nosso cliente, o que fortalece a assertividade do mesmo.
+> * Documentação Completa: Criamos uma documentação abrangente que inclui uma visão geral do projeto e seus principais requisitos. Isso servirá como um guia fundamental para toda a equipe e partes interessadas.
+> * Estrutura de Banco de Dados: Definimos a estrutura inicial do banco de dados, fornecendo uma base sólida para o armazenamento de dados essenciais do projeto.
+> * Modelagem de Dados: Realizamos uma modelagem de dados detalhada, incluindo diagramas lógicos e conceituais, um diagrama de classe UML e um Modelo Entidade-Relacionamento (MER). Esses recursos ajudarão na compreensão da estrutura do sistema.
 
-<span id="Equipe"></span> 
+## :computer: Mockup
+<p><img src="https://github.com/InfinityDevAPI/InfintyDev/assets/111203231/a7c2866d-01b2-4584-9707-c33c92838ec2" alt="Capa" style="width:600px;height:350px;"></p>
 
-## Equipe
+##### Link para acesso: https://www.canva.com/design/DAFvZEL_vDg/wDxx2ZbSzzpDsn6NBAnS2A/edit?utm_content=DAFvZEL_vDg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
-| Função | Nome | Linkedin | GitHub |
-| --- | --- | --- | --- |
-| Scrum Master | Michel Momose Marques | [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/michel-momosemichel-momose-b78a04203/)|[<img src="https://camo.githubusercontent.com/fbc3df79ffe1a99e482b154b29262ecbb10d6ee4ed22faa82683aa653d72c4e1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d3130303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465" />](https://github.com/Michel-Momose)| ![Alt text](image-1.png)
-| Product Owner | Paulo Afonso da Cruz | [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/paulo-afonso-cruz-304256174)|[<img src="https://camo.githubusercontent.com/fbc3df79ffe1a99e482b154b29262ecbb10d6ee4ed22faa82683aa653d72c4e1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d3130303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465" />](https://github.com/PauloCruz34)| ![Alt text](image-6.png)
-| Dev | Júlio César Barbosa da Rosa Rodrigues | [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/jcbarbosarosa)|[<img src="https://camo.githubusercontent.com/fbc3df79ffe1a99e482b154b29262ecbb10d6ee4ed22faa82683aa653d72c4e1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d3130303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465" />](https://github.com/jcbarbosarosa)| ![Alt text](image-4.png)
-| Dev | Rodrigo Pereira de Castro | [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://br.linkedin.com/in/rodrigo-pereira-de-castro-09758853)|[<img src="https://camo.githubusercontent.com/fbc3df79ffe1a99e482b154b29262ecbb10d6ee4ed22faa82683aa653d72c4e1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d3130303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465" />](https://github.com/ropcastr)| ![Alt text](image-3.png)
-| Dev | Gleialison dos Santos | [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/gleialison-rezende-835453b0)|[<img src="https://camo.githubusercontent.com/fbc3df79ffe1a99e482b154b29262ecbb10d6ee4ed22faa82683aa653d72c4e1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d3130303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465" />](https://github.com/Gleialison)| ![Alt text](image-2.png)  
-| Dev | Aguinaldo Cardoso de Macedo Junior | [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/aguinaldo-cardoso-427270200)|[<img src="https://camo.githubusercontent.com/fbc3df79ffe1a99e482b154b29262ecbb10d6ee4ed22faa82683aa653d72c4e1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d3130303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465" />](https://github.com/aguinaldojunior31)| ![Alt text](image-7.png)
-| Dev | Renan Graciano Faria | [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/renan-gf/)|[<img src="https://camo.githubusercontent.com/fbc3df79ffe1a99e482b154b29262ecbb10d6ee4ed22faa82683aa653d72c4e1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769744875622d3130303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465" />](https://github.com/VonNexx)|  ![Alt text](image-5.png)
+## :electric_plug: Wireframe
+<p><img src="https://github.com/InfinityDevAPI/InfintyDev/assets/111203231/36175ceb-2ec1-4c12-ad8c-5bba062de37b" alt="Wireframe" style="width:600px;height:350px;"></p>
 
-<span id="Descrição do Desafio"></span>
+##### Link para acesso: https://www.figma.com/file/JzcC7EtloLaRUFP8QMep7G/Infinity-Dev?type=design&node-id=0%3A1&mode=design&t=nVdBcSIY4OiZ1XNT-1
 
-## Descrição do Desafio (Problema)
+## :chart_with_upwards_trend: Fluxograma
+<p><img src="https://github.com/InfinityDevAPI/InfintyDev/assets/111203231/17c8421e-3db8-4f80-87c6-ac923ae3e3d9" alt="Capa" style="width:600px;height:350px;"></p>
 
-O curso de Análise e Desenvolvimento de Sistemas (ADS) da Fatec São José dos Campos não possui um sistema para gerenciamento de Trabalhos de Graduação. Atualmente, todo o controle é realizado por meio de formulários do Google, planilhas e trocas de e-mail.
-De forma resumida, o aluno, inicialmente, preenche um formulário, informando seus dados (nome, e-mail, em quais disciplinas de TG se encontra matriculado, etc), os dados de seu orientador (nome e e-mail) e, finalmente, os detalhes de seu TG (tipo, problema a ser tratado, etc). A partir disso, o professor passa a controlar o progresso de cada aluno por meio de atividades, entregues por e-mail.
-Essa forma de gestão de TGs causa vários problemas, pois não há uma forma simples de saber quais alunos estão com as entregas em dia e têm condições de defender seus TGs. Isso impede que sejam tomadas ações proativas de recuperação, o que leva a um alto índice de reprovação.
+## :chart_with_downwards_trend: Burndown
+<p><img src="https://github.com/InfinityDevAPI/InfintyDev/assets/111203231/6417383d-4c2d-4745-8b99-9ed7474bde04" alt="Capa" style="width:600px;height:350px;"></p>
 
-<span id="Objetivo"></span>
+## :bookmark: Tecnologias Utilizadas
+> * [Java](https://www.java.com/pt-BR/)
+> * [Git/Github (Controle de versão)](https://github.com/)
+> * [VsCode](https://code.visualstudio.com/)
+> * [Figma](https://www.figma.com/)
+> * [Canva](https://www.canva.com/)
+> * [BR Modelo](https://app.brmodeloweb.com/)
 
-## Objetivo
-
-Criar uma solução computacional (CRUD) de um sistema de gerenciamento de trabalhos de graduação, onde será possivel uma melhor organização e acesso as informações sobre os trabalhos de graduação, assim como manipular (Adicionar, remover e editar) essas informações (nome, email, disciplinas do TG, etc) do curso de Analise e Desenvolvimento de Sistemas (ADS) da Fatec São José dos Campos. O programa será desenvolvido em Java com acesso a sistema gerenciador de BD (SGBD) usando JDBC.
-
-<span id="Requisitos Funcionais"></span>
-
-### Requisitos Funcionais
-* Importação de informações de alunos, orientadores e TGs;
-* Lançamento de notas de atividades;
-* Gestão de alunos, orientadores, TGs e entregas; e
-* Geração de relatórios para acompanhamento de entregas, agendamento de bancas de defesa, fechamento de semestre e transporte de notas.
-
-<span id="Requisitos Não Funcionais"></span>
-
-### Requisitos Não Funcionais
-* Linguagem Java (sem frameworks);
-* Banco de Dados Relacional;
-* Documentações (manual de usuário e instruções de instalação).
-
-<span id="Tecnologias"></span>
-
-## Tecnologias Utilizadas
-
-* [Java](https://www.java.com/pt-BR/)
-* [JDBC](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/)
-* [Git/Github (Controle de versão)](https://github.com/)
-* [VsCode](https://code.visualstudio.com/)
-
-<span id="Product BackLog"></span>
-
-## Product BackLog
-
-| ID   | User Stories                                                 | Épico                       | Sprint                                                    | Prioridade |
-| ---- | ------------------------------------------------------------ | --------------------------- | --------------------------------------------------------- | ---------- |
-| 1 | Como professor, eu quero poder importar informações sobre os alunos, orientadores e TGs via arquivo csv contendo os dados, para manter registros precisos.| Importar Dados de Alunos Via Arquivo CSV | - | 1 |
-| 2 | Como professor, eu quero poder lançar notas para cada aluno, associando-as a alunos específicos e atividades específicas, para avaliar o desempenho dos alunos. | Lançar Notas de Entrega | - | 3 |
-| 3 | Como professor, eu quero poder adicionar e editar informações sobre as entregas dos alunos, incluindo datas, status e feedbacks, para monitorar o progresso dos TGs. | Gerenciar  Entregas dos Alunos| - | 2 |
-| 4 | Como professor, eu quero poder gerar relatórios sobre as entregas dos alunos, para acompanhar o progresso dos TGs. | Gerar Relatórios de Entregas | - | 4 |
-| 5 | Como professor, eu quero documentações detalhadas, incluindo um manual de usuário e instruções de instalação, para facilitar o uso e a manutenção do sistema.| Criar Documentação | - | 5 |
-
-
-<span id="Cronograma"></span>
-
-## Cronograma
-
-| Sprint | Link                  | Início     | Entrega    | Status     |
-|--------|-----------------------|------------|------------|------------|
-| --     | Kick-off              | 25/08/2023 | - | ✔          |
-| 01     | [Sprint 01](#sprint1) | 04/09/2023 | 24/09/2023 |    |
-| 02     | [Sprint 02](#sprint2) | 25/09/2023 | 15/10/2023 |             |
-| 03     | [Sprint 03](#sprint3) | 16/10/2023 | 05/11/2023 |           |
-| 04     | [Sprint 04](#sprint4) | 06/11/2023 | 26/11/2023 | -          |
-| --     | Feira de Soluções     | 12/12/2023 | - | -          |
