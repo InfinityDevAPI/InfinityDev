@@ -26,7 +26,7 @@
 > * [Link para acesso do Mockup](https://www.canva.com/design/DAFvZEL_vDg/wDxx2ZbSzzpDsn6NBAnS2A/edit?utm_content=DAFvZEL_vDg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## :electric_plug: Wireframe das Telas
-<p><img src="https://github.com/InfinityDevAPI/InfintyDev/assets/111203231/36175ceb-2ec1-4c12-ad8c-5bba062de37b" alt="Wireframe" style="width:600px;height:350px;"></p>
+<p><img src="https://github.com/InfinityDevAPI/InfintyDev/assets/111203231/67857b1c-1c91-4bef-b8d4-29190c00832a" alt="Wireframe" style="width:700px;height:350px;"></p>
 
 > * [Link para acesso do Wireframe](https://www.figma.com/file/JzcC7EtloLaRUFP8QMep7G/Infinity-Dev?type=design&node-id=0%3A1&mode=design&t=nVdBcSIY4OiZ1XNT-1)
 
