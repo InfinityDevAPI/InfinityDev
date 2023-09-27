@@ -4,6 +4,7 @@
 
 <p align="center">
   <a href ="#dart-objetivo-sprint-1"> Objetivo </a>  •
+  <a href="#date-Sprint-Backlog"> 1° Sprint Backlog </a> •
   <a href="#computer-mockup-das-telas"> Mockup </a> •
   <a href="#electric_plug-wireframe-das-telas"> Wireframe </a> • 
   <a href ="#chart_with_upwards_trend-fluxograma"> Fluxograma </a>  •
@@ -20,7 +21,7 @@
 > * Estrutura de Banco de Dados: Definimos a estrutura inicial do banco de dados, fornecendo uma base sólida para o armazenamento de dados essenciais do projeto.
 > * Modelagem de Dados: Realizamos uma modelagem de dados detalhada, incluindo diagramas lógicos e conceituais, um diagrama de classe UML e um Modelo Entidade-Relacionamento (MER). Esses recursos ajudarão na compreensão da estrutura do sistema.
 
-## 1° Sprint Backlog
+## :date: Sprint Backlog
 ![1° Sprint Criar o digrama de relacionamento conceitual Criar um código java que leia e imprima arquivos csv Criação do Product Backlog Criar um fluxograma do projeto](https://github.com/InfinityDevAPI/InfintyDev/assets/126684518/7a00c1fe-9623-45fc-a230-d7f62de7298b)
 
 
