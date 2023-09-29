@@ -1,73 +1,42 @@
-CREATE SCHEMA `GERENCIAMENTO TG` DEFAULT CHARACTER SET utf8 ;
+-- | Criação do Banco de Dados |
+CREATE SCHEMA gerenciamentotg; 
 
-CREATE TABLE aluno 
-( 
- nome STRING,  
- emailFatec STRING PRIMARY KEY,  
- emailFornecido STRING,  
- idorientador INT,  
-); 
+USE gerenciamentotg;
+-- | Criação das Tabelas |
+CREATE TABLE Aluno (
+    emailFatec VARCHAR(255) PRIMARY KEY,
+    emailFornecido VARCHAR(255),
+    nome VARCHAR(255),
+    orientador_emailFatec VARCHAR(255),
+    turma_id INT,
+    FOREIGN KEY (orientador_emailFatec) REFERENCES Orientador(emailFatec),
+    FOREIGN KEY (turma_id) REFERENCES Turma(id)
+);
 
-CREATE TABLE orientador 
-( 
- nome STRING,  
- emailFatec STRING PRIMARY KEY,  
-); 
+CREATE TABLE Orientador (
+    emailFatec VARCHAR(255) PRIMARY KEY,
+    nome VARCHAR(255)
+);
 
-CREATE TABLE tg 
-( 
- tipo STRING,  
- id INT PRIMARY KEY,  
- empresa_envolvida STRING,  
- problema STRING,  
- disciplina STRING,  
-); 
+CREATE TABLE TG (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    tipo VARCHAR(255),
+    empresa_envolvida VARCHAR(255),
+    problema TEXT,
+    disciplina VARCHAR(255)
+);
 
-CREATE TABLE entrega 
-( 
- id INT PRIMARY KEY,  
- descricao STRING,  
- data_entrega STRING,  
-); 
+CREATE TABLE Entrega (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    descricao TEXT,
+    data_entrega DATE,
+    turma_id INT,
+    feedback TEXT,
+    nota FLOAT,
+    FOREIGN KEY (turma_id) REFERENCES Turma(id)
+);
 
-CREATE TABLE turma 
-( 
- id INT PRIMARY KEY,  
- semestre_ano STRING,  
-); 
-
-CREATE TABLE Rel 
-( 
- emailFatec STRING PRIMARY KEY,  
- id INT PRIMARY KEY,  
-); 
-
-CREATE TABLE Rel1 
-( 
- emailFatec STRING PRIMARY KEY,  
- id INT PRIMARY KEY,  
-); 
-
-CREATE TABLE Rel11 
-( 
- id INT PRIMARY KEY,  
- id INT PRIMARY KEY,  
-); 
-
-CREATE TABLE Rel111 
-( 
- feedback STRING,  
- nota INT,  
- id INT PRIMARY KEY,  
- emailFatec STRING PRIMARY KEY,  
-); 
-
-ALTER TABLE aluno ADD FOREIGN KEY(idorientador) REFERENCES orientador (idorientador)
-ALTER TABLE Rel ADD FOREIGN KEY(emailFatec) REFERENCES aluno (emailFatec)
-ALTER TABLE Rel ADD FOREIGN KEY(id) REFERENCES tg (id)
-ALTER TABLE Rel1 ADD FOREIGN KEY(emailFatec) REFERENCES aluno (emailFatec)
-ALTER TABLE Rel1 ADD FOREIGN KEY(id) REFERENCES turma (id)
-ALTER TABLE Rel11 ADD FOREIGN KEY(id) REFERENCES entrega (id)
-ALTER TABLE Rel11 ADD FOREIGN KEY(id) REFERENCES turma (id)
-ALTER TABLE Rel111 ADD FOREIGN KEY(id) REFERENCES entrega (id)
-ALTER TABLE Rel111 ADD FOREIGN KEY(emailFatec) REFERENCES aluno (emailFatec)
+CREATE TABLE Turma (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    semestre_ano VARCHAR(10)
+);
