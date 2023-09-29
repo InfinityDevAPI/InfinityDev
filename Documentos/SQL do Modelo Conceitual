@@ -1,48 +1,50 @@
+CREATE SCHEMA `GERENCIAMENTO TG` DEFAULT CHARACTER SET utf8 ;
+
 CREATE TABLE aluno 
 ( 
- nome INT,  
- emailFatec INT PRIMARY KEY,  
- emailFornecido INT,  
+ nome STRING,  
+ emailFatec STRING PRIMARY KEY,  
+ emailFornecido STRING,  
  idorientador INT,  
 ); 
 
 CREATE TABLE orientador 
 ( 
- nome INT,  
- emailFatec INT PRIMARY KEY,  
+ nome STRING,  
+ emailFatec STRING PRIMARY KEY,  
 ); 
 
 CREATE TABLE tg 
 ( 
- tipo INT,  
+ tipo STRING,  
  id INT PRIMARY KEY,  
- empresa_envolvida INT,  
- problema INT,  
- disciplina INT,  
+ empresa_envolvida STRING,  
+ problema STRING,  
+ disciplina STRING,  
 ); 
 
 CREATE TABLE entrega 
 ( 
  id INT PRIMARY KEY,  
- descricao INT,  
- data_entrega INT,  
+ descricao STRING,  
+ data_entrega STRING,  
 ); 
 
 CREATE TABLE turma 
 ( 
  id INT PRIMARY KEY,  
- semestre_ano INT,  
+ semestre_ano STRING,  
 ); 
 
 CREATE TABLE Rel 
 ( 
- emailFatec INT PRIMARY KEY,  
+ emailFatec STRING PRIMARY KEY,  
  id INT PRIMARY KEY,  
 ); 
 
 CREATE TABLE Rel1 
 ( 
- emailFatec INT PRIMARY KEY,  
+ emailFatec STRING PRIMARY KEY,  
  id INT PRIMARY KEY,  
 ); 
 
@@ -54,10 +56,10 @@ CREATE TABLE Rel11
 
 CREATE TABLE Rel111 
 ( 
- feedback INT,  
+ feedback STRING,  
  nota INT,  
  id INT PRIMARY KEY,  
- emailFatec INT PRIMARY KEY,  
+ emailFatec STRING PRIMARY KEY,  
 ); 
 
 ALTER TABLE aluno ADD FOREIGN KEY(idorientador) REFERENCES orientador (idorientador)
