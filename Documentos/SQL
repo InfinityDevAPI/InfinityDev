@@ -2,7 +2,18 @@
 CREATE SCHEMA gerenciamentotg; 
 
 USE gerenciamentotg;
+
 -- | Criação das Tabelas |
+CREATE TABLE Orientador (
+    emailFatec VARCHAR(255) PRIMARY KEY,
+    nome VARCHAR(255)
+);
+
+CREATE TABLE Turma (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    semestre_ano VARCHAR(10)
+);
+
 CREATE TABLE Aluno (
     emailFatec VARCHAR(255) PRIMARY KEY,
     emailFornecido VARCHAR(255),
@@ -11,11 +22,6 @@ CREATE TABLE Aluno (
     turma_id INT,
     FOREIGN KEY (orientador_emailFatec) REFERENCES Orientador(emailFatec),
     FOREIGN KEY (turma_id) REFERENCES Turma(id)
-);
-
-CREATE TABLE Orientador (
-    emailFatec VARCHAR(255) PRIMARY KEY,
-    nome VARCHAR(255)
 );
 
 CREATE TABLE TG (
@@ -34,9 +40,4 @@ CREATE TABLE Entrega (
     feedback TEXT,
     nota FLOAT,
     FOREIGN KEY (turma_id) REFERENCES Turma(id)
-);
-
-CREATE TABLE Turma (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    semestre_ano VARCHAR(10)
 );
