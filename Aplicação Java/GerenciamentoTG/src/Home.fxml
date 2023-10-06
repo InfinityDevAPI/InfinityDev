@@ -37,12 +37,11 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.5" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ImageView fitHeight="359.0" fitWidth="600.0" preserveRatio="true">
+      <ImageView fitHeight="380.0" fitWidth="600.0" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Fatec/API/Infinity%20Dev/Imgs/Mockup/Menu%20Inicial.png" />
+            <Image url="@../../../../../Fatec/API/InfintyDev/Imgs/Mockup/Menu%20Inicial.png" />
          </image>
       </ImageView>
       <Button layoutX="249.0" layoutY="290.0" mnemonicParsing="false" opacity="0.5" prefHeight="26.0" prefWidth="103.0" style="-fx-background-radius: 20px;" text="Importar CSV" />
