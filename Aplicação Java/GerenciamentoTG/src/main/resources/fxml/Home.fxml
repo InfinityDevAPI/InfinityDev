@@ -37,16 +37,16 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.5" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="Aplicação Java\GerenciamentoTG\src\App.java">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.5" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomeController">
    <children>
-      <ImageView fitHeight="380.0" fitWidth="600.0" preserveRatio="true">
+      <ImageView fitHeight="338.0" fitWidth="628.0" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Fatec/API/InfintyDev/Imgs/Mockup/Menu%20Inicial.png" />
+            <Image url="@../../../../Imgs/Mockup/Menu%20Inicial.png" />
          </image>
       </ImageView>
-      <Button layoutX="249.0" layoutY="290.0" mnemonicParsing="false" opacity="0.5" prefHeight="26.0" prefWidth="103.0" style="-fx-background-radius: 20px;" text="Importar CSV" />
-      <Button layoutX="33.0" layoutY="130.0" mnemonicParsing="false" opacity="0.5" prefHeight="127.0" prefWidth="142.0" text="Agendamentos" />
-      <Button layoutX="248.0" layoutY="130.0" mnemonicParsing="false" opacity="0.5" prefHeight="127.0" prefWidth="103.0" text="Relatórios" />
-      <Button layoutX="463.0" layoutY="130.0" mnemonicParsing="false" opacity="0.5" prefHeight="127.0" prefWidth="103.0" text="Entregas" />
+      <Button fx:id="botaoImportarCSV" layoutX="249.0" layoutY="290.0" mnemonicParsing="false" opacity="0.5" prefHeight="27.0" prefWidth="103.0" style="-fx-background-radius: 20px; -fx-background-color: green;" text="Importar CSV" />
+      <Button fx:id="botaoAgendamentos" layoutX="33.0" layoutY="130.0" mnemonicParsing="false" opacity="0.5" prefHeight="127.0" prefWidth="142.0" style="-fx-background-color: green;" text="Agendamentos" />
+      <Button fx:id="botaoRelatorios" layoutX="252.0" layoutY="130.0" mnemonicParsing="false" opacity="0.5" prefHeight="127.0" prefWidth="97.0" style="-fx-background-color: green;" text="Relatórios" />
+      <Button fx:id="botaoEntregas" layoutX="463.0" layoutY="130.0" mnemonicParsing="false" opacity="0.5" prefHeight="127.0" prefWidth="106.0" style="-fx-background-color: green;" text="Entregas" />
    </children>
 </AnchorPane>
