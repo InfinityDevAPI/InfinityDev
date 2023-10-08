@@ -87,7 +87,8 @@ public class GerenciamentoTgDAO {
             e.printStackTrace();
         }
     }
-    
+    // ** Adicionar métodos que faltam, (editar, excluir e buscar) **
+
     public void fecharConexao() {
         try {
             if (connection != null) {
