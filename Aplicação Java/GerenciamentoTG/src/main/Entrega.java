@@ -1,5 +1,4 @@
 package main;
-
 public class Entrega {
 
     private String descricao;

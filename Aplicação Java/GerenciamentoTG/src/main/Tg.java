@@ -1,5 +1,4 @@
 package main;
-
 public class Tg {
 
     private String tipo;
