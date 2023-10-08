@@ -39,6 +39,11 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.5" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomeController">
    <children>
+      <ImageView fitHeight="377.0" fitWidth="600.0" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Fatec/API/InfintyDev/Imgs/Mockup/Menu%20Inicial.png" />
+         </image>
+      </ImageView>
       <ImageView fitHeight="338.0" fitWidth="628.0" preserveRatio="true">
          <image>
             <Image url="@../../../../Imgs/Mockup/Menu%20Inicial.png" />
