@@ -6,16 +6,24 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Current File",
+            "name": "App",
             "request": "launch",
-            "mainClass": "${file}"
+            "mainClass": "main.App",
+            "projectName": "GerenciamentoTG_73c18525"
         },
         {
             "type": "java",
             "name": "App",
             "request": "launch",
-            "mainClass": "App",
-            "projectName": "GerenciamentoTG_73c18525"
+            "mainClass": "main.Main",
+            "projectName": "GerenciamentoTG_73c18525",
+            "vmArgs": "--module-path C:/Program Files/Java/javafx-sdk-21/lib --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
         },
         {
             "type": "java",
