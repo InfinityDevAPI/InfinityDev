@@ -13,7 +13,7 @@
    <children>
       <ImageView fitHeight="338.0" fitWidth="600.0" preserveRatio="true">
          <image>
-            <Image url="src\main\resources\imgs\Agendamentos_Entregas.png" />
+            <Image url="@../imgs/Agendamentos_Entregas.png" />
          </image>
       </ImageView>
       <Button fx:id="botaoEntregas" layoutX="480.0" layoutY="86.0" minHeight="19.0" mnemonicParsing="false" opacity="0.5" prefHeight="20.0" prefWidth="86.0" style="-fx-background-radius: 15px; -fx-background-color: green;" text="Entregas" />
