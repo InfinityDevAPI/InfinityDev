@@ -17,7 +17,7 @@ import java.util.List;
 public class ManipulaCSV {
 
     public static void main(String[] args) throws CsvValidationException {
-        String arquivoCSV = "Aplicação Java\\GerenciamentoTG\\resources\\Trabalho de Graduação - 202302 (Responses) - Form Responses 1.csv";
+        String arquivoCSV = "Documentos\\trabalhodeGraduacao-202302.csv";
 
         try {
             // Lê o arquivo CSV
