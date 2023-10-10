@@ -2,8 +2,19 @@ package main.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 
-public class EntregasController {
+public class EntregasCadastrarNotaController {
+
+    @FXML
+    private TextArea DescriçãoEntrega;
+
+    @FXML
+    private TextArea Devolutiva;
+
+    @FXML
+    private TextField Nota;
 
     @FXML
     private Button botaoCadastrarEntrega;
@@ -12,13 +23,16 @@ public class EntregasController {
     private Button botaoCadastrarNota;
 
     @FXML
+    private Button botaoConfirmar;
+
+    @FXML
     private Button botaoDevolutiva;
 
     @FXML
     private Button botaoHome;
 
     @FXML
-    private Button dropdownAluno;
+    private Button dropdownALuno;
 
     @FXML
     private Button dropdownAtividade;

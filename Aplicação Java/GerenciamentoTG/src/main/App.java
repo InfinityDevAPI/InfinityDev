@@ -10,7 +10,7 @@ public class App extends Application{
     
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Home.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("kHome.fxml"));
         primaryStage.setTitle("Infinity Dev");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
