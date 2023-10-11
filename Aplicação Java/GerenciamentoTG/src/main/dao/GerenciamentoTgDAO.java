@@ -119,6 +119,7 @@ public class GerenciamentoTgDAO {
         }
     }
 
+    //Método para buscar dados do TG
     public List<Aluno> buscarAlunosPorTurma(int turmaId) {
     List<Aluno> alunos = new ArrayList<>();
     String sql = "SELECT * FROM Aluno WHERE turma_id = ?";
