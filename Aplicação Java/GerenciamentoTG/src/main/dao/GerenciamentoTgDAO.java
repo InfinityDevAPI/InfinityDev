@@ -5,6 +5,10 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import main.Aluno;
 
 
 public class GerenciamentoTgDAO {
@@ -90,7 +94,55 @@ public class GerenciamentoTgDAO {
             e.printStackTrace();
         }
     }
-    // ** Adicionar métodos que faltam, (editar, excluir e buscar) **
+    // Método para editar dados do TG
+    public void editarOrientador(String emailFatec, String novoNome) {
+        String sql = "UPDATE Orientador SET nome = ? WHERE emailFatec = ?";
+        
+        try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+            preparedStatement.setString(1, novoNome);
+            preparedStatement.setString(2, emailFatec);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    //Método para deletar dados do TG
+    public void deletarOrientador(String emailFatec) {
+        String sql = "DELETE FROM Orientador WHERE emailFatec = ?";
+        
+        try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+            preparedStatement.setString(1, emailFatec);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public List<Aluno> buscarAlunosPorTurma(int turmaId) {
+    List<Aluno> alunos = new ArrayList<>();
+    String sql = "SELECT * FROM Aluno WHERE turma_id = ?";
+    
+    try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+        preparedStatement.setInt(1, turmaId);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        
+        while (resultSet.next()) {
+            Aluno aluno = new Aluno(
+                resultSet.getString("emailFatec"),
+                resultSet.getString("emailFornecido"),
+                resultSet.getString("nome"),
+                resultSet.getString("orientador_emailFatec"),
+                resultSet.getInt("turma_id")
+            );
+            alunos.add(aluno);
+        }
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+    
+    return alunos;
+}
 
     public void fecharConexao() {
         try {

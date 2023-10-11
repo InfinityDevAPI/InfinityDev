@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "main.App",
+            "projectName": "InfinityDev_bda4738b"
+        },
+        {
+            "type": "java",
+            "name": "ManipulaCSV",
+            "request": "launch",
+            "mainClass": "main.ManipulaCSV",
+            "projectName": "InfinityDev_bda4738b"
+        },
+        {
+            "type": "java",
             "name": "ManipulaCSV",
             "request": "launch",
             "mainClass": "main.ManipulaCSV",
