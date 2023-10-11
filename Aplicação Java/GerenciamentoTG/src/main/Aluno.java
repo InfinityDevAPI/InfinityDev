@@ -5,7 +5,7 @@ public class Aluno {
     private String emailFornecido;
     private String nome;
 
-    public Aluno(String emailFornecido, String nome) {
+    public Aluno(String emailFornecido, String nome, String string, String string2, int i) {
     this.emailFornecido = emailFornecido;
     this.nome = nome;
     }
