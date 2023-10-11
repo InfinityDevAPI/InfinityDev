@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CorrectCsv",
+            "request": "launch",
+            "mainClass": "main.CorrectCsv",
+            "projectName": "InfinityDev_3ab856f4"
+        },
+        {
+            "type": "java",
+            "name": "correcCsv",
+            "request": "launch",
+            "mainClass": "main.correcCsv",
+            "projectName": "InfinityDev_3ab856f4"
+        },
+        {
+            "type": "java",
+            "name": "correcaoCSV",
+            "request": "launch",
+            "mainClass": "main.correcaoCSV",
+            "projectName": "InfinityDev_3ab856f4"
+        },
+        {
+            "type": "java",
+            "name": "correçãoCSV",
+            "request": "launch",
+            "mainClass": "main.correçãoCSV",
+            "projectName": "InfinityDev_3ab856f4"
+        },
+        {
+            "type": "java",
             "name": "ManipulaCSV",
             "request": "launch",
             "mainClass": "main.ManipulaCSV",
