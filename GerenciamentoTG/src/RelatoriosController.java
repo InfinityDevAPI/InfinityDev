@@ -2,7 +2,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import javafx.scene.control.ToggleButton;
 
 public class RelatoriosController {
 
@@ -13,13 +12,13 @@ public class RelatoriosController {
     private Button botaoHome;
 
     @FXML
-    private ToggleButton botaoTG1;
+    private Button botaoTG1;
 
     @FXML
-    private ToggleButton botaoTG12;
+    private Button botaoTG12;
 
     @FXML
-    private ToggleButton botaoTG2;
+    private Button botaoTG2;
 
     @FXML
     private Button dropdownAluno;
