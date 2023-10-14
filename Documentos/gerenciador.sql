@@ -1,22 +1,21 @@
--- | Criação do Banco de Dados |
-CREATE SCHEMA gerenciamentotg;
+CREATE SCHEMA gerenciador;
+USE gerenciador;
 
-USE gerenciamentotg;
-
--- | Criação das Tabelas |
 CREATE TABLE Orientador (
-    emailFatec VARCHAR(255) PRIMARY KEY,
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    emailFatec VARCHAR(255) ,
     nome VARCHAR(255)
 );
 
 CREATE TABLE Turma (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    semestre_ano VARCHAR(10),
-    decricao VARCHAR(10)
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    semestre_ano VARCHAR(20)
 );
+	
+
 
 CREATE TABLE Aluno (
-    emailFatec VARCHAR(255) PRIMARY KEY,
+    emailFatec VARCHAR(255),
     emailFornecido VARCHAR(255),
     nome VARCHAR(255),
     orientador_emailFatec VARCHAR(255),
@@ -42,3 +41,8 @@ CREATE TABLE Entrega (
     nota FLOAT,
     FOREIGN KEY (turma_id) REFERENCES Turma(id)
 );
+
+ALTER TABLE Turma MODIFY COLUMN semestre_ano VARCHAR(20);
+ALTER TABLE Orientador ADD INDEX (emailFatec);
+ALTER TABLE Aluno MODIFY turma_id INT AUTO_INCREMENT;
+

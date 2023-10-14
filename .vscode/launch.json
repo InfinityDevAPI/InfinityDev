@@ -6,7 +6,46 @@
     "configurations": [
         {
             "type": "java",
-<<<<<<< HEAD
+            "name": "Debug (Launch) - Connect",
+            "request": "launch",
+            "mainClass": "Connect",
+            "projectName": "InfinityDev_3ab856f4",
+            "args": "",
+            "vmArgs": "-cp .;lib/mysql-connector-java-8.0.33.jar"
+        },
+
+        {
+            "type": "java",
+            "name": "Connect",
+            "request": "launch",
+            "mainClass": "Connect",
+            "projectName": "InfinityDev_3ab856f4"
+        },
+
+        
+        {
+            "vmArgs": "--module-path \"c:/Users/paulo/Documents/Java/javafx-sdk-21/lib\" --add-modules javafx.controls,javafx.fxml",
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "vmArgs": "--module-path \"c:/Users/paulo/Documents/Java/javafx-sdk-21/lib\" --add-modules javafx.controls,javafx.fxml",
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "application.App",
+            "projectName": "TesteFX2_9fea24f6"
+        },
+        {
+            "type": "java",
             "name": "CorrectCsv",
             "request": "launch",
             "mainClass": "main.CorrectCsv",
@@ -32,7 +71,9 @@
             "request": "launch",
             "mainClass": "main.correçãoCSV",
             "projectName": "InfinityDev_3ab856f4"
-=======
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "main.App",
@@ -44,7 +85,6 @@
             "request": "launch",
             "mainClass": "main.ManipulaCSV",
             "projectName": "InfinityDev_bda4738b"
->>>>>>> 6fa14bd5321e1f25f35b1899047ed78ea5620fef
         },
         {
             "type": "java",

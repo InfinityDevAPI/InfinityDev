@@ -15,6 +15,10 @@
         "Aplicação Java/GerenciamentoTG/lib/javafx.media.jar",
         "Aplicação Java/GerenciamentoTG/lib/javafx.swing.jar",
         "Aplicação Java/GerenciamentoTG/lib/javafx.web.jar",
-        "Aplicação Java/GerenciamentoTG/lib/javafx-swt.jar"
+        "Aplicação Java/GerenciamentoTG/lib/javafx-swt.jar",
+        "c:\\Users\\paulo\\Documents\\mysql-connector-j-8.0.33\\mysql-connector-j-8.0.33.jar"
+    ],
+    "cSpell.words": [
+        "gerenciamentotg"
     ]
 }

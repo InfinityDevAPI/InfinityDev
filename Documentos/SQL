@@ -1,5 +1,5 @@
 -- | Criação do Banco de Dados |
-CREATE SCHEMA gerenciamentotg; 
+CREATE SCHEMA gerenciamentotg;
 
 CREATE user 'gerenciamento_user'@'localhost' identified by 'admin123'
 
