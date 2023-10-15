@@ -87,6 +87,7 @@ public class HomeController {
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setTitle("Relatorios");
+            stage.setResizable(false);
             stage.setScene(new Scene(root));
             
             stage.initModality(Modality.APPLICATION_MODAL);
