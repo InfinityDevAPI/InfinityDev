@@ -10,11 +10,14 @@ import java.sql.SQLException;
 public class Connect{
     
     
-    public static void main (String[] args) {
-        String jdbcUrl = "jdbc:mysql://localhost:3306/gerenciador";
+    /**
+     * @param args
+     */
+    public static void main (String[] args ) {
+        String jdbcUrl = "jdbc:mysql://localhost:3306/alunos";
         String username = "root";
         String password = "109081";
-        String filePath = "trabalhodegraduacaoCorrigido.csv";
+        String filePath = "Documentos//trabalhodeGraduacao-202302.csv";
         int batchSize = 20;
         Connection connection = null;
 
@@ -22,18 +25,9 @@ public class Connect{
             connection = DriverManager.getConnection(jdbcUrl, username, password);
             connection.setAutoCommit(false);
 
-            String orientadorSQL = "insert into Orientador(emailFatec, nome) values(?,?)";
-            PreparedStatement orientadorStatement = connection.prepareStatement(orientadorSQL);
-
-            String turmaSQL = "insert into Turma(semestre_ano) values(?)";
-            PreparedStatement turmaStatement = connection.prepareStatement(turmaSQL);
-
-            String alunoSQL = "insert into Aluno(emailFatec, emailFornecido, nome, orientador_emailFatec) values(?, ?, ?, ?)";
-            PreparedStatement alunoStatement = connection.prepareStatement(alunoSQL);
-
-            String tgSQL = "insert into TG(tipo, empresa_envolvida, problema, disciplina) values(?, ?, ?, ?)";
-            PreparedStatement tgStatement = connection.prepareStatement(tgSQL);
-
+            String sql = "insert into alunos(emailPessal,emailFatec,nome,nomeOrientador,emailOrientador,Matriculado,Tipotg,problema,empresa,disciplina) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            
             BufferedReader lineReader = new BufferedReader(new FileReader(filePath));
             String lineText = null;
             int count = 0;
@@ -42,77 +36,44 @@ public class Connect{
             while ((lineText = lineReader.readLine()) != null) {
                 String[] data = lineText.split(",");
 
-                String orientadorEmailFatec = data[5];
-                String orientadorNome = data[4];
-                if (!isOrientadorAlreadyExist(connection, orientadorEmailFatec)) {
-                    // Se o orientador não existe, insira-o na tabela Orientador
-                    orientadorStatement.setString(1, orientadorEmailFatec);
-                    orientadorStatement.setString(2, orientadorNome);
-                    orientadorStatement.addBatch();
-                }
-                
-
-                String turma = data[6];
-                turmaStatement.setString(1, turma);
-                turmaStatement.addBatch();
-
-                String alunoEmailFatec = data[2];
-                String alunoEmailFornecido = data[1];
-                String alunoNome = data[3];
-
-                alunoStatement.setString(1, alunoEmailFatec);
-                alunoStatement.setString(2, alunoEmailFornecido);
-                alunoStatement.setString(3, alunoNome);
-                alunoStatement.setString(4, orientadorEmailFatec);
-                
-                alunoStatement.addBatch();
-
-                String tipoTg = data[7];
+                String emailPessoal = data[1];
+                String emailFatec = data[2];
+                String nome = data[3];
+                String nomeOrientador = data[4];
+                String emailOrientador = data[5];
+                String matriculado = data[6];
+                String tipoTG = data[7];
                 String problema = data[8];
                 String empresa = data[9];
                 String disciplina = data[10];
 
+                statement.setString(1, emailPessoal);
+                statement.setString(2, emailFatec);
+                statement.setString(3,nome);
+                statement.setString(4, nomeOrientador);
+                statement.setString(5, emailOrientador);
+                statement.setString(6, matriculado);
+                statement.setString(7, tipoTG);
+                statement.setString(8, problema);
+                statement.setString(9, empresa);
+                statement.setString(10, disciplina);
 
-                tgStatement.setString(1, tipoTg);
-                tgStatement.setString(2, empresa);
-                tgStatement.setString(3, problema);
-                tgStatement.setString(4, disciplina);
-                tgStatement.addBatch();
-
+                statement.addBatch();
                 if (++count % batchSize == 0) {
-                    orientadorStatement.executeBatch();
-                    turmaStatement.executeBatch();
-                    alunoStatement.executeBatch();
-                    tgStatement.executeBatch();
+                    statement.executeBatch();
                 }
             }
 
             // Executar quaisquer lotes pendentes e confirmar a transação
-            orientadorStatement.executeBatch();
-            turmaStatement.executeBatch();
-            alunoStatement.executeBatch();
-            tgStatement.executeBatch();
-
+            lineReader.close();
+            statement.executeBatch();
             connection.commit();
-            connection.close();
             System.out.println("Data has been inserted successfully.");
 
         } catch (Exception exception) {
             exception.printStackTrace();
         }
     }
-    private static boolean isOrientadorAlreadyExist(Connection connection, String emailFatec) {
-        try {
-            String query = "SELECT emailFatec FROM Orientador WHERE emailFatec = ?";
-            PreparedStatement preparedStatement = connection.prepareStatement(query);
-            preparedStatement.setString(1, emailFatec);
-            ResultSet resultSet = preparedStatement.executeQuery();
-            return resultSet.next();
-        }
-        catch (SQLException exception) {
-            exception.printStackTrace();
-            return false;
-        }
-    }    
+    
 }
 
