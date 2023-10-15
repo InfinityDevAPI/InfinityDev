@@ -12,8 +12,8 @@
             <Image url="@../imgs/Agendamentos.png" />
          </image>
       </ImageView>
-      <Button fx:id="botaoEntregas" layoutX="480.0" layoutY="85.0" minHeight="20.0" mnemonicParsing="false" opacity="0.5" prefHeight="22.0" prefWidth="86.0" style="-fx-background-radius: 15px; -fx-background-color: green;" text="Entregas" />
-      <Button fx:id="botaoDefesasTG" layoutX="480.0" layoutY="230.0" minHeight="20.0" minWidth="53.0" mnemonicParsing="false" opacity="0.5" prefHeight="20.0" prefWidth="86.0" style="-fx-background-radius: 20px; -fx-background-color: green;" text="Defesas de TG" />
-      <Button fx:id="botaoHome" layoutX="504.0" layoutY="151.0" minWidth="37.0" mnemonicParsing="false" opacity="0.5" prefHeight="35.0" prefWidth="37.0" style="-fx-background-color: green;" text="Home" />
+      <Button fx:id="botaoEntregas" layoutX="480.0" layoutY="85.0" minHeight="20.0" mnemonicParsing="false" onMouseClicked="#abrirEntregas" opacity="0.0" prefHeight="22.0" prefWidth="86.0" style="-fx-background-radius: 15px; -fx-background-color: green;" text="Entregas" />
+      <Button fx:id="botaoDefesasTG" layoutX="480.0" layoutY="230.0" minHeight="20.0" minWidth="53.0" mnemonicParsing="false" onMouseClicked="#abrirDefesasTG" opacity="0.0" prefHeight="20.0" prefWidth="86.0" style="-fx-background-radius: 20px; -fx-background-color: green;" text="Defesas de TG" />
+      <Button fx:id="botaoHome" layoutX="504.0" layoutY="151.0" minWidth="37.0" mnemonicParsing="false" onMouseClicked="#abrirHome" opacity="0.0" prefHeight="35.0" prefWidth="37.0" style="-fx-background-color: green;" text="Home" />
    </children>
 </AnchorPane>
