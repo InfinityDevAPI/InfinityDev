@@ -3,6 +3,13 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "Connect",
+			"request": "launch",
+			"mainClass": "Connect",
+			"projectName": "InfinityDev_5b844d2a"
+		},
+		{
+			"type": "java",
 			"name": "App",
 			"request": "launch",
 			"mainClass": "application.App",
