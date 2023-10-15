@@ -12,9 +12,9 @@
             <Image url="@../imagens/Entregas.png" />
          </image>
       </ImageView>
-      <Button fx:id="botaoCadastrarEntrega" layoutX="639.0" layoutY="106.0" mnemonicParsing="false" onMouseClicked="#abrirCadastrarEntrega" opacity="0.5" prefHeight="45.0" prefWidth="116.0" style="-fx-background-color: green; -fx-background-radius: 30px;" />
-      <Button fx:id="botaoCadastrarNota" layoutX="639.0" layoutY="299.0" mnemonicParsing="false" onMouseDragged="#abrirCadastrarNota" opacity="0.5" prefHeight="45.0" prefWidth="116.0" style="-fx-background-color: green; -fx-background-radius: 30px;" />
-      <Button fx:id="botaoDevolutiva" layoutX="639.0" layoutY="212.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#abrirDevolutiva" opacity="0.5" prefHeight="26.0" prefWidth="116.0" style="-fx-background-color: green; -fx-background-radius: 15px;" />
+      <Button fx:id="botaoCadastrarEntrega" layoutX="639.0" layoutY="106.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#abrirCadastrarEntrega" opacity="0.5" prefHeight="45.0" prefWidth="116.0" style="-fx-background-color: green; -fx-background-radius: 30px;" />
+      <Button fx:id="botaoCadastrarNota" layoutX="639.0" layoutY="299.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseDragged="#abrirCadastrarNota" opacity="0.5" prefHeight="45.0" prefWidth="116.0" style="-fx-background-color: green; -fx-background-radius: 30px;" />
+      <Button fx:id="botaoDevolutiva" layoutX="639.0" layoutY="212.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#abrirDevolutiva" opacity="0.5" prefHeight="26.0" prefWidth="116.0" style="-fx-background-color: green; -fx-background-radius: 15px;" />
       <Button fx:id="botaoHome" layoutX="675.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#abrirHome" opacity="0.5" prefHeight="45.0" prefWidth="46.0" style="-fx-background-color: green;" />
       <Button fx:id="dropdownAluno" layoutX="45.0" layoutY="62.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="26.0" prefWidth="143.0" style="-fx-background-color: green;" />
       <Button fx:id="dropdownAtividade" layoutX="45.0" layoutY="238.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="27.0" prefWidth="143.0" style="-fx-background-color: green;" />

@@ -71,7 +71,7 @@ public class EntregasDevolutivaController {
 
             Stage currentStage = (Stage) botaoCadastrarNota.getScene().getWindow();
             
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ui/EntregasCadastrarEntrega.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ui/EntregasCadastrarNota.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setTitle("Cadastro de Notas");
