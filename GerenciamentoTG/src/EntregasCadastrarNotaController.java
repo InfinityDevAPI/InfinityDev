@@ -51,31 +51,37 @@ public class EntregasCadastrarNotaController {
 
     @FXML
     void abrirCadastrarEntrega(MouseEvent event) throws IOException {
+        Stage currentStage = (Stage) botaoCadastrarEntrega.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("resources/fxml/Entregas_Cadastrar_Entrega.fxml"));
         Scene cadastrarEntrega = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         stage.setTitle("Entregas: Cadastrar Entrega");
         stage.setScene(cadastrarEntrega);  
+        currentStage.close();
         stage.show();
     }
 
     @FXML
     void abrirDevolutiva(MouseEvent event) throws IOException {
+        Stage currentStage = (Stage) botaoDevolutiva.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("resources/fxml/Entregas_Devolutiva.fxml"));
         Scene devolutiva = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         stage.setTitle("Entregas: Devolutiva");
         stage.setScene(devolutiva);  
+        currentStage.close();
         stage.show();
     }
 
     @FXML
     void abrirHome(MouseEvent event) throws IOException {
+        Stage currentStage = (Stage) botaoHome.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("resources/fxml/Home.fxml"));
         Scene home = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         stage.setTitle("Home");
         stage.setScene(home);  
+        currentStage.close();
         stage.show();
     }
 

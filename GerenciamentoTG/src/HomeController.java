@@ -25,31 +25,37 @@ public class HomeController {
 
     @FXML
     void abrirAgendamentos(MouseEvent event) throws IOException {
+        Stage currentStage = (Stage) botaoAgendamentos.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("resources/fxml/Agendamentos.fxml"));
         Scene agendamentos = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         stage.setTitle("Agendamentos");
-        stage.setScene(agendamentos);  
+        stage.setScene(agendamentos); 
+        currentStage.close(); 
         stage.show();
     }
 
     @FXML
     void abrirEntregas(MouseEvent event) throws IOException {
+        Stage currentStage = (Stage) botaoEntregas.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("resources/fxml/Entregas.fxml"));
         Scene entregas = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         stage.setTitle("Entregas");
         stage.setScene(entregas);  
+        currentStage.close();
         stage.show();
     }
 
     @FXML
     void abrirRelatorios(MouseEvent event) throws IOException {
+        Stage currentStage = (Stage) botaoRelatorios.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("resources/fxml/Relatorios.fxml"));
         Scene relatorios = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         stage.setTitle("Relatórios");
         stage.setScene(relatorios);  
+        currentStage.close();
         stage.show();
     }
 

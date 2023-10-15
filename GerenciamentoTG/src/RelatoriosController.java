@@ -1,7 +1,15 @@
+import java.io.IOException;
+
+import javax.swing.JOptionPane;
+
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 
 public class RelatoriosController {
 
@@ -25,6 +33,9 @@ public class RelatoriosController {
 
     @FXML
     private Button dropdownTipoTG;
+
+    @FXML
+    private TextField textAluno;
 
     @FXML
     private TextField textAptoDefesa;
@@ -79,5 +90,25 @@ public class RelatoriosController {
 
     @FXML
     private TextField textNotaEntrega;
+
+    @FXML
+    private TextField textTipoTG;
+
+    @FXML
+    void abrirHome(MouseEvent event) throws IOException {
+        Stage currentStage = (Stage) botaoHome.getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("resources/fxml/Relatorios.fxml"));
+        Scene home = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("Home");
+        stage.setScene(home);  
+        currentStage.close();
+        stage.show();
+    }
+
+    @FXML
+    void exportarCSV(MouseEvent event) {
+        JOptionPane.showMessageDialog(null, "Relatório exportado!!!", "Exportado!", 1);
+    }
 
 }

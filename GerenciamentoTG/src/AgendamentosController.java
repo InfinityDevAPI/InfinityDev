@@ -20,31 +20,37 @@ public class AgendamentosController {
 
     @FXML
     void abrirDefesasTG(MouseEvent event) throws IOException {
+        Stage currentStage = (Stage) botaoDefesasTG.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("resources/fxml/Agendamentos_Defesas_TG.fxml"));
-        Scene home = new Scene(fxmlLoader.load());
+        Scene agendamentosDefesasTG = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
-        stage.setTitle("Home");
-        stage.setScene(home);  
+        stage.setTitle("Agendamentos: Defesas de TG");
+        stage.setScene(agendamentosDefesasTG);
+        currentStage.close();
         stage.show();
     }
 
     @FXML
     void abrirEntregas(MouseEvent event) throws IOException {
+        Stage currentStage = (Stage) botaoEntregas.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("resources/fxml/Agendamentos_Entregas.fxml"));
-        Scene home = new Scene(fxmlLoader.load());
+        Scene agendamentosDefesasTG = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
-        stage.setTitle("Home");
-        stage.setScene(home);  
+        stage.setTitle("Agendamentos: Entregas");
+        stage.setScene(agendamentosDefesasTG);
+        currentStage.close();
         stage.show();
     }
 
     @FXML
     void abrirHome(MouseEvent event) throws IOException {
+        Stage currentStage = (Stage) botaoHome.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("resources/fxml/Home.fxml"));
-        Scene home = new Scene(fxmlLoader.load());
+        Scene agendamentosDefesasTG = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         stage.setTitle("Home");
-        stage.setScene(home);  
+        stage.setScene(agendamentosDefesasTG);
+        currentStage.close();
         stage.show();
     }
 
