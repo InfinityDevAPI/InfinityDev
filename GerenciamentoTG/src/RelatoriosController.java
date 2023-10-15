@@ -97,7 +97,7 @@ public class RelatoriosController {
     @FXML
     void abrirHome(MouseEvent event) throws IOException {
         Stage currentStage = (Stage) botaoHome.getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("resources/fxml/Relatorios.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("resources/fxml/Home.fxml"));
         Scene home = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         stage.setTitle("Home");
