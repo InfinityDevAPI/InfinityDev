@@ -13,6 +13,16 @@
 		"c:/Program Files/Java/javafx-sdk-21/lib/javafx.swing.jar",
 		"c:/Program Files/Java/javafx-sdk-21/lib/javafx.web.jar",
 		"c:/Program Files/Java/javafx-sdk-21/lib/javafx-swt.ja",
-		"src/lib/opencsv-5.8.jar"
+		"src/lib/opencsv-5.8.jar",
+		"GerenciamentoTG/src/lib/javafx.base.jar",
+		"GerenciamentoTG/src/lib/javafx.controls.jar",
+		"GerenciamentoTG/src/lib/javafx.fxml.jar",
+		"GerenciamentoTG/src/lib/javafx.graphics.jar",
+		"GerenciamentoTG/src/lib/javafx.media.jar",
+		"GerenciamentoTG/src/lib/javafx.swing.jar",
+		"GerenciamentoTG/src/lib/javafx.web.jar",
+		"GerenciamentoTG/src/lib/javafx-swt.jar",
+		"GerenciamentoTG/src/lib/mysql-connector-j-8.0.33.jar",
+		"GerenciamentoTG/src/lib/opencsv-5.8.jar"
 	]
 }
