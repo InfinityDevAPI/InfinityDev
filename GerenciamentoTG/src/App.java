@@ -15,6 +15,7 @@ public class App extends Application {
         Scene home = new Scene(fxmlLoader.load());
         primaryStage.setTitle("Home");
         primaryStage.setScene(home);
+        primaryStage.setResizable(false);
         primaryStage.show();
-        }
+    }
 }

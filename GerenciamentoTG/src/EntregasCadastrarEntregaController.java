@@ -78,6 +78,7 @@ public class EntregasCadastrarEntregaController {
         Stage stage = new Stage();
         stage.setTitle("Home");
         stage.setScene(home);  
+        stage.setResizable(false);
         currentStage.close();
         stage.show();
     }

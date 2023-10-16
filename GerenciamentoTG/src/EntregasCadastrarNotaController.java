@@ -57,6 +57,7 @@ public class EntregasCadastrarNotaController {
         Stage stage = new Stage();
         stage.setTitle("Entregas: Cadastrar Entrega");
         stage.setScene(cadastrarEntrega);  
+        stage.setResizable(false);
         currentStage.close();
         stage.show();
     }
@@ -69,6 +70,7 @@ public class EntregasCadastrarNotaController {
         Stage stage = new Stage();
         stage.setTitle("Entregas: Devolutiva");
         stage.setScene(devolutiva);  
+        stage.setResizable(false);
         currentStage.close();
         stage.show();
     }
@@ -81,6 +83,7 @@ public class EntregasCadastrarNotaController {
         Stage stage = new Stage();
         stage.setTitle("Home");
         stage.setScene(home);  
+        stage.setResizable(false);
         currentStage.close();
         stage.show();
     }

@@ -65,6 +65,7 @@ public class AgendamentosDefesasTGController {
         Stage stage = new Stage();
         stage.setTitle("Agendamentos: Entregas");
         stage.setScene(agendamentosEntregas);
+        stage.setResizable(false);
         currentStage.close();
         stage.show();
     }
@@ -77,6 +78,7 @@ public class AgendamentosDefesasTGController {
         Stage stage = new Stage();
         stage.setTitle("Home");
         stage.setScene(home);
+        stage.setResizable(false);
         currentStage.close();
         stage.show();
     }

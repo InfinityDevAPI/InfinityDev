@@ -31,6 +31,7 @@ public class HomeController {
         Stage stage = new Stage();
         stage.setTitle("Agendamentos");
         stage.setScene(agendamentos); 
+        stage.setResizable(false);
         currentStage.close(); 
         stage.show();
     }
@@ -43,6 +44,7 @@ public class HomeController {
         Stage stage = new Stage();
         stage.setTitle("Entregas");
         stage.setScene(entregas);  
+        stage.setResizable(false);
         currentStage.close();
         stage.show();
     }
@@ -55,6 +57,7 @@ public class HomeController {
         Stage stage = new Stage();
         stage.setTitle("Relatórios");
         stage.setScene(relatorios);  
+        stage.setResizable(false);
         currentStage.close();
         stage.show();
     }
