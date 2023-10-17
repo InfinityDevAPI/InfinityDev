@@ -1,4 +1,4 @@
-package application;
+package application.controller;
 
 import java.io.IOException;
 
@@ -8,21 +8,17 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-public class EntregasCadastrarNotaController {
+public class EntregasDevolutivaController {
 
     @FXML
     private TextArea DescriçãoEntrega;
 
     @FXML
     private TextArea Devolutiva;
-
-    @FXML
-    private TextField Nota;
 
     @FXML
     private Button botaoCadastrarEntrega;
@@ -40,7 +36,7 @@ public class EntregasCadastrarNotaController {
     private Button botaoHome;
 
     @FXML
-    private Button dropdownALuno;
+    private Button dropdownAluno;
 
     @FXML
     private Button dropdownAtividade;
@@ -51,7 +47,7 @@ public class EntregasCadastrarNotaController {
 
             Stage currentStage = (Stage) botaoCadastrarEntrega.getScene().getWindow();
             
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ui/EntregasCadastrarEntrega.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application/ui/EntregasCadastrarEntrega.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setTitle("Cadastro de Entregas");
@@ -70,15 +66,15 @@ public class EntregasCadastrarNotaController {
     }
 
     @FXML
-    void abrirDevolutiva(MouseEvent event) {
+    void abrirCadastrarNota(MouseEvent event) {
         try {
 
-            Stage currentStage = (Stage) botaoDevolutiva.getScene().getWindow();
+            Stage currentStage = (Stage) botaoCadastrarNota.getScene().getWindow();
             
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ui/EntregasDevolutiva.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application/ui/EntregasCadastrarNota.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
-            stage.setTitle("Cadastro de Devolutiva");
+            stage.setTitle("Cadastro de Notas");
             stage.setResizable(false);
             stage.setScene(new Scene(root));
             
@@ -99,7 +95,7 @@ public class EntregasCadastrarNotaController {
 
             Stage currentStage = (Stage) botaoHome.getScene().getWindow();
             
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ui/Home.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application/ui/Home.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setTitle("Gerenciador de Tg's");

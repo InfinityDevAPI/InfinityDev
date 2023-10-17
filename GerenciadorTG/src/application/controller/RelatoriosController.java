@@ -1,4 +1,4 @@
-package application;
+package application.controller;
 
 import java.io.IOException;
 
@@ -96,7 +96,7 @@ public class RelatoriosController {
 
             Stage currentStage = (Stage) botaoHome.getScene().getWindow();
             
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ui/Home.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application/ui/Home.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setTitle("Gerenciador de Tg's");

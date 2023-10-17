@@ -1,4 +1,4 @@
-package application;
+package application.controller;
 
 import java.io.IOException;
 
@@ -55,7 +55,7 @@ public class AgendamentoDefesasTGController {
 
             Stage currentStage = (Stage) botaoEntregas.getScene().getWindow();
             
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ui/AgendamentoEntregas.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application/ui/AgendamentoEntregas.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setTitle("Agendamento de Entregas do TG");
@@ -79,7 +79,7 @@ public class AgendamentoDefesasTGController {
 
             Stage currentStage = (Stage) botaoHome.getScene().getWindow();
             
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ui/Home.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application/ui/Home.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
             stage.setTitle("Gerenciador de Tg's");

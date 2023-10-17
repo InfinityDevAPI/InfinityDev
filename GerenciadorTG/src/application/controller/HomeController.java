@@ -1,6 +1,8 @@
-package application;
+package application.controller;
 
 import java.io.IOException;
+
+import javax.swing.JOptionPane;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,51 +13,59 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-public class AgendamentosController {
+public class HomeController {
+	
 
-    @FXML
-    private Button botaoDefesasTG;
+	@FXML
+    private Button botaoAgendamentos;
 
     @FXML
     private Button botaoEntregas;
 
     @FXML
-    private Button botaoHome;
-    
-    @FXML
-    void abrirDefesasTG(MouseEvent event) {
-        try {
+    private Button botaoImportarCSV;
 
-            Stage currentStage = (Stage) botaoDefesasTG.getScene().getWindow();
+    @FXML
+    private Button botaoRelatorios;
+    
+
+    @FXML
+    void abrirAgendamentos(MouseEvent event) {
+        try {
+            // Obtém a referência para a janela atual
+            Stage currentStage = (Stage) botaoAgendamentos.getScene().getWindow();
             
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ui/AgendamentoDefesasTG.fxml"));
+            // Cria a nova janela de agendamentos
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application/ui/Agendamentos.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
-            stage.setTitle("Agendamento de Defesa do TG");
+            stage.setTitle("Agendamentos");
             stage.setResizable(false);
             stage.setScene(new Scene(root));
             
+            // Define o modality para Modality.APPLICATION_MODAL, isso faz com que a nova janela seja modal
             stage.initModality(Modality.APPLICATION_MODAL);
             
+            // Fecha a janela atual
             currentStage.close();
             
+            // Mostra a nova janela de agendamentos
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
             
         }
     }
-    
-    @FXML
-    void abrirEntregas(MouseEvent event) {
-        try {
 
+    @FXML
+    void abrirEntregas(MouseEvent event) throws IOException {
+        try {
             Stage currentStage = (Stage) botaoEntregas.getScene().getWindow();
             
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ui/AgendamentoEntregas.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application/ui/Entregas.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
-            stage.setTitle("Agendamento de Entregas do TG");
+            stage.setTitle("Entregas");
             stage.setResizable(false);
             stage.setScene(new Scene(root));
             
@@ -71,15 +81,14 @@ public class AgendamentosController {
     }
 
     @FXML
-    void abrirHome(MouseEvent event) {
+    void abrirRelatorios(MouseEvent event) throws IOException {
         try {
-
-            Stage currentStage = (Stage) botaoHome.getScene().getWindow();
+            Stage currentStage = (Stage) botaoRelatorios.getScene().getWindow();
             
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ui/Home.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application/ui/Relatorios.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
-            stage.setTitle("Gerenciador de Tg's");
+            stage.setTitle("Relatorios");
             stage.setResizable(false);
             stage.setScene(new Scene(root));
             
@@ -93,5 +102,9 @@ public class AgendamentosController {
             
         }
     }
-    
+
+    @FXML
+    void importarCSV(MouseEvent event) {
+        JOptionPane.showMessageDialog(null, "CSV importado com sucesso!!!", "Importado!", 1);
+    }
 }
