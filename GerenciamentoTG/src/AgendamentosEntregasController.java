@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -20,9 +21,6 @@ public class AgendamentosEntregasController {
     private Button botaoDefesasTG;
 
     @FXML
-    private Button botaoEntregas;
-
-    @FXML
     private Button botaoHome;
 
     @FXML
@@ -35,19 +33,19 @@ public class AgendamentosEntregasController {
     private Button botaoTG2;
 
     @FXML
-    private TextArea descricaoEntrega;
-
-    @FXML
-    private Button dropdownCalendario;
+    private DatePicker dropdownCalendario;
 
     @FXML
     private Button dropdownEntrega;
 
     @FXML
-    private TextField numeroEntregas;
+    private TextArea textDescEntrega;
 
     @FXML
-    private TextField textAluno;
+    private TextField textEntrega;
+
+    @FXML
+    private TextField textNumEntregas;
 
     @FXML
     void abrirDefesasTG(MouseEvent event) throws IOException {
