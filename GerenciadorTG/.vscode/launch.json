@@ -5,6 +5,13 @@
 			"type": "java",
 			"name": "Main",
 			"request": "launch",
+			"mainClass": "Gerenciador/application.Main",
+			"projectName": "GerenciadorTG"
+		},
+		{
+			"type": "java",
+			"name": "Main",
+			"request": "launch",
 			"mainClass": "application.Main",
 			"projectName": "GerenciadorTG_56436f80"
 		},
