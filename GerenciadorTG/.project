@@ -10,19 +10,17 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
-		<buildCommand>
-			<name>org.eclipse.xtext.ui.shared.xtextBuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
 	</buildSpec>
 	<natures>
-		<nature>org.eclipse.xtext.ui.shared.xtextNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
 	<filteredResources>
 		<filter>
+<<<<<<< HEAD
 			<id>1697842152047</id>
+=======
+			<id>1697857677334</id>
+>>>>>>> 2e78bacd698558297dd585bdef922f0b65a1214d
 			<name></name>
 			<type>30</type>
 			<matcher>
