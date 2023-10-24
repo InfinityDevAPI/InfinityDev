@@ -8,6 +8,7 @@
 	</buildSpec>
 	<natures>
 	</natures>
+<<<<<<< HEAD
 	<filteredResources>
 		<filter>
 			<id>1697857677334</id>
@@ -19,4 +20,6 @@
 			</matcher>
 		</filter>
 	</filteredResources>
+=======
+>>>>>>> parent of dc15324 (ConexãoBD)
 </projectDescription>
