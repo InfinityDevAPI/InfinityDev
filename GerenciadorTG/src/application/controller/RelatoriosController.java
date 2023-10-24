@@ -2,15 +2,15 @@ package application.controller;
 
 import java.io.IOException;
 
-import javax.swing.JOptionPane;
-
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class RelatoriosController {
@@ -35,9 +35,6 @@ public class RelatoriosController {
 
     @FXML
     private Button dropdownTipoTG;
-
-    @FXML
-    private TextField textAluno;
 
     @FXML
     private TextField textAptoDefesa;
@@ -94,24 +91,27 @@ public class RelatoriosController {
     private TextField textNotaEntrega;
 
     @FXML
-    private TextField textTipoTG;
+    void abrirHome(MouseEvent event) {
+        try {
 
-    @FXML
-    void abrirHome(MouseEvent event) throws IOException {
-        Stage currentStage = (Stage) botaoHome.getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application/ui/Home.fxml"));
-        Scene home = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setTitle("Home");
-        stage.setScene(home);  
-        stage.setResizable(false);
-        currentStage.close();
-        stage.show();
+            Stage currentStage = (Stage) botaoHome.getScene().getWindow();
+            
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application/ui/Home.fxml"));
+            Parent root = fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Gerenciador de Tg's");
+            stage.setResizable(false);
+            stage.setScene(new Scene(root));
+            
+            stage.initModality(Modality.APPLICATION_MODAL);
+            
+            currentStage.close();
+            
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+            
+        }
     }
-
-    @FXML
-    void exportarCSV(MouseEvent event) {
-        JOptionPane.showMessageDialog(null, "Relatório exportado!!!", "Exportado!", 1);
-    }
-
+    
 }

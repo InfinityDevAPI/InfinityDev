@@ -8,73 +8,47 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-public class EntregasDevolutivaController {
-
-    @FXML
-    private TextArea DescriçãoEntrega;
-
-    @FXML
-    private TextArea Devolutiva;
-
-    @FXML
-    private Button botaoCadastrarEntrega;
-
-    @FXML
-    private Button botaoCadastrarNota;
+public class AgendamentoEntregasController {
 
     @FXML
     private Button botaoConfirmar;
 
     @FXML
-    private Button botaoDevolutiva;
+    private Button botaoDefesasTG;
+
+    @FXML
+    private Button botaoEntregas;
 
     @FXML
     private Button botaoHome;
 
     @FXML
-    private Button dropdownAluno;
+    private TextArea descricaoEntrega;
 
     @FXML
-    private Button dropdownAtividade;
+    private Button dropdownCalendario;
 
     @FXML
-    void abrirCadastrarEntrega(MouseEvent event) {
+    private Button dropdownEntrega;
+
+    @FXML
+    private TextField numeroEntregas;
+
+    @FXML
+    void abrirDefesasTG(MouseEvent event) {
         try {
 
-            Stage currentStage = (Stage) botaoCadastrarEntrega.getScene().getWindow();
+            Stage currentStage = (Stage) botaoDefesasTG.getScene().getWindow();
             
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application/ui/EntregasCadastrarEntrega.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application/ui/AgendamentoDefesasTG.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();
-            stage.setTitle("Cadastro de Entregas");
-            stage.setResizable(false);
-            stage.setScene(new Scene(root));
-            
-            stage.initModality(Modality.APPLICATION_MODAL);
-            
-            currentStage.close();
-            
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-            
-        }
-    }
-
-    @FXML
-    void abrirCadastrarNota(MouseEvent event) {
-        try {
-
-            Stage currentStage = (Stage) botaoCadastrarNota.getScene().getWindow();
-            
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application/ui/EntregasCadastrarNota.fxml"));
-            Parent root = fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setTitle("Cadastro de Notas");
+            stage.setTitle("Agendamento de Defesa do TG");
             stage.setResizable(false);
             stage.setScene(new Scene(root));
             

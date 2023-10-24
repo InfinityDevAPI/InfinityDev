@@ -11,7 +11,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFx">
 	<classpathentry kind="lib" path="C:/Program Files/Java/javafx-sdk-21/lib/javafx.base.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
@@ -48,6 +47,11 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Program Files/Java/javafx-sdk-21/lib/javafx-swt.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jfoenix/jfoenix-9.0.10.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>

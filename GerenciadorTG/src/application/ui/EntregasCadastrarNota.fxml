@@ -7,24 +7,22 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.5" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.EntregasCadastrarNotaController">
+<AnchorPane maxHeight="450.0" maxWidth="800.0" minHeight="450.0" minWidth="800.0" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.EntregasCadastrarNotaController">
    <children>
-      <ImageView fitHeight="363.0" fitWidth="600.0" preserveRatio="true">
+      <ImageView fitHeight="450.0" fitWidth="800.0" preserveRatio="true">
          <image>
             <Image url="@../imagens/Entregas_Cadastrar_Nota.png" />
          </image>
       </ImageView>
-      <Button fx:id="botaoCadastrarEntrega" layoutX="479.0" layoutY="79.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#abrirCadastrarEntrega" opacity="0.0" prefHeight="34.0" prefWidth="87.0" style="-fx-background-color: green; -fx-background-radius: 30px;" text="Cadastrar Entrega" />
-      <Button fx:id="botaoDevolutiva" layoutX="480.0" layoutY="158.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#abrirDevolutiva" opacity="0.0" prefHeight="20.0" prefWidth="86.0" style="-fx-background-color: green; -fx-background-radius: 15px;" text="Devolutiva" />
-      <Button fx:id="botaoCadastrarNota" layoutX="479.0" layoutY="224.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.0" prefHeight="34.0" prefWidth="87.0" style="-fx-background-color: green; -fx-background-radius: 30px;" text="Cadastrar Nota" />
-      <Button fx:id="botaoConfirmar" layoutX="339.0" layoutY="248.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#confirmarNota" opacity="0.0" prefHeight="20.0" prefWidth="87.0" style="-fx-background-color: green; -fx-background-radius: 15px;" text="Confirmar" />
-      <TextField fx:id="Nota" layoutX="238.0" layoutY="248.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="20.0" prefWidth="62.0" style="-fx-background-color: green; -fx-background-radius: 0px;" />
-      <Button fx:id="dropdownAtividade" layoutX="120.0" layoutY="178.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: green;" text="Atividade" />
-      <Button fx:id="dropdownALuno" layoutX="120.0" layoutY="46.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: green;" text="Aluno" />
-      <TextArea fx:id="DescriçãoEntrega" layoutX="203.0" layoutY="86.0" opacity="0.5" prefHeight="60.0" prefWidth="213.0" style="-fx-background-color: green;" />
-      <TextArea fx:id="Devolutiva" layoutX="203.0" layoutY="172.0" opacity="0.5" prefHeight="60.0" prefWidth="213.0" style="-fx-background-color: green;" />
-      <Button fx:id="botaoHome" layoutX="505.0" layoutY="270.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#abrirHome" opacity="0.0" prefHeight="34.0" prefWidth="36.0" style="-fx-background-color: green;" text="Home" />
-      <TextField fx:id="textAluno" layoutX="33.0" layoutY="46.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="21.0" prefWidth="87.0" style="-fx-background-color: green;" />
-      <TextField fx:id="textAtividade" layoutX="33.0" layoutY="178.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="21.0" prefWidth="86.0" style="-fx-background-color: green;" />
+      <Button fx:id="botaoCadastrarEntrega" layoutX="638.0" layoutY="105.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#abrirCadastrarEntrega" opacity="0.5" prefHeight="46.0" prefWidth="116.0" style="-fx-background-color: green; -fx-background-radius: 30px;" />
+      <Button fx:id="botaoDevolutiva" layoutX="640.0" layoutY="212.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#abrirDevolutiva" opacity="0.5" prefHeight="26.0" prefWidth="116.0" style="-fx-background-color: green; -fx-background-radius: 15px;" />
+      <Button fx:id="botaoCadastrarNota" layoutX="640.0" layoutY="298.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="46.0" prefWidth="114.0" style="-fx-background-color: green; -fx-background-radius: 30px;" />
+      <Button fx:id="botaoConfirmar" layoutX="452.0" layoutY="331.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="26.0" prefWidth="116.0" style="-fx-background-color: green; -fx-background-radius: 15px;" />
+      <TextField fx:id="Nota" layoutX="317.0" layoutY="331.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: green; -fx-background-radius: 0px;" />
+      <Button fx:id="dropdownAtividade" layoutX="45.0" layoutY="238.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="26.0" prefWidth="142.0" style="-fx-background-color: green;" />
+      <Button fx:id="dropdownALuno" layoutX="45.0" layoutY="62.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="26.0" prefWidth="142.0" style="-fx-background-color: green;" />
+      <TextArea fx:id="DescriçãoEntrega" layoutX="271.0" layoutY="115.0" maxHeight="-Infinity" maxWidth="-Infinity" opacity="0.5" prefHeight="81.0" prefWidth="285.0" style="-fx-background-color: green;" />
+      <TextArea fx:id="Devolutiva" layoutX="271.0" layoutY="230.0" maxHeight="-Infinity" maxWidth="-Infinity" opacity="0.5" prefHeight="81.0" prefWidth="285.0" style="-fx-background-color: green;" />
+      <Button fx:id="botaoHome" layoutX="673.0" layoutY="360.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#abrirHome" opacity="0.5" prefHeight="46.0" prefWidth="49.0" style="-fx-background-color: green;" />
    </children>
 </AnchorPane>

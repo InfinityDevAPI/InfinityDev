@@ -5,16 +5,16 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.5" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.HomeController">
+<AnchorPane maxHeight="360.0" maxWidth="640.0" minHeight="360.0" minWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.HomeController">
    <children>
-      <ImageView fitHeight="338.0" fitWidth="622.0" preserveRatio="true">
+      <ImageView fitHeight="360.0" fitWidth="640.0" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../imagens/Home.png" />
          </image>
       </ImageView>
-      <Button fx:id="botaoImportarCSV" layoutX="249.0" layoutY="291.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#importarCSV" opacity="0.0" prefHeight="25.0" prefWidth="102.5" style="-fx-background-radius: 20px; -fx-background-color: green;" text="Importar CSV" />
-      <Button fx:id="botaoAgendamentos" layoutX="33.0" layoutY="132.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#abrirAgendamentos" opacity="0.0" prefHeight="123.0" prefWidth="141.0" style="-fx-background-color: green;" text="Agendamentos" />
-      <Button fx:id="botaoRelatorios" layoutX="254.0" layoutY="132.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#abrirRelatorios" opacity="0.0" prefHeight="123.0" prefWidth="93.0" style="-fx-background-color: green;" text="Relatórios" />
-      <Button fx:id="botaoEntregas" layoutX="465.0" layoutY="133.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#abrirEntregas" opacity="0.0" prefHeight="122.0" prefWidth="102.0" style="-fx-background-color: green;" text="Entregas" />
+      <Button fx:id="botaoImportarCSV" layoutX="266.0" layoutY="310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#importarCSV" opacity="0.0" prefHeight="28.0" prefWidth="108.0" style="-fx-background-radius: 20px; -fx-background-color: green;" text="Importar CSV" />
+      <Button fx:id="botaoAgendamentos" layoutX="47.0" layoutY="157.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#abrirAgendamentos" opacity="0.0" prefHeight="118.0" prefWidth="128.0" style="-fx-background-color: green;" text="Agendamentos" />
+      <Button fx:id="botaoRelatorios" layoutX="272.0" layoutY="157.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#abrirRelatorios" opacity="0.0" prefHeight="118.0" prefWidth="97.0" style="-fx-background-color: green;" text="Relatórios" />
+      <Button fx:id="botaoEntregas" layoutX="492.0" layoutY="157.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#abrirEntregas" opacity="0.0" prefHeight="118.0" prefWidth="114.0" style="-fx-background-color: green;" text="Entregas" />
    </children>
 </AnchorPane>

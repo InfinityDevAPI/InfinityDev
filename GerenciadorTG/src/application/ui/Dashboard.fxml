@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="827.0" prefWidth="1320.0" styleClass="root" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+
+   <children>
+
+      <VBox prefHeight="781.0" prefWidth="281.0">
+
+         <children>
+
+            <AnchorPane fx:id="side_ankerpane" prefHeight="827.0" prefWidth="281.0" styleClass="side_ankerpane" stylesheets="@../css/style.css">
+
+               <children>
+
+                  <Pane fx:id="inner_pane" layoutX="17.0" layoutY="27.0" prefHeight="78.0" prefWidth="248.0" styleClass="inner_pane" stylesheets="@../css/style.css">
+
+                     <children>
+
+                        <ImageView fitHeight="78.0" fitWidth="90.0" layoutX="22.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+
+                           <image>
+
+                              <Image url="@../../iamgess/logoo.png" />
+
+                           </image>
+
+                        </ImageView>
+
+                        <Pane fx:id="most_inner_pane" layoutX="199.0" layoutY="1.0" prefHeight="78.0" prefWidth="42.0" styleClass="most_inner_pane" stylesheets="@../css/style.css">
+
+                           <children>
+
+                              <ImageView fitHeight="78.0" fitWidth="42.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+
+                                 <image>
+
+                                    <Image url="@../../iamgess/dot.png" />
+
+                                 </image>
+
+                              </ImageView>
+
+                           </children>
+
+                        </Pane>
+
+                     </children>
+
+                  </Pane>
+
+                  <JFXButton fx:id="btn_workbench" layoutX="17.0" layoutY="141.0" onMouseClicked="#btn_workbench" prefHeight="53.0" prefWidth="248.0" styleClass="btn_workbench" stylesheets="@../css/style.css" text="Workbench" textFill="WHITE">
+
+                     <graphic>
+
+                        <ImageView fitHeight="40.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+
+                           <image>
+
+                              <Image url="@../../iamgess/home.png" />
+
+                           </image>
+
+                        </ImageView>
+
+                     </graphic>
+
+                     <font>
+
+                        <Font name="Century Gothic Bold" size="13.0" />
+
+                     </font>
+
+                  </JFXButton>
+
+                  <JFXButton fx:id="btn_workbench1" layoutX="17.0" layoutY="211.0" prefHeight="53.0" prefWidth="248.0" styleClass="btn_workbench11" stylesheets="@../css/style.css" text="Filters" textFill="#c6b6b6">
+
+                     <graphic>
+
+                        <ImageView fitHeight="40.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+
+                           <image>
+
+                              <Image url="@../../iamgess/icons8-filter-50.png" />
+
+                           </image>
+
+                        </ImageView>
+
+                     </graphic>
+
+                     <font>
+
+                        <Font name="Century Gothic Bold" size="13.0" />
+
+                     </font>
+
+                  </JFXButton>
+
+                  <JFXButton fx:id="btn_workbench11" layoutX="17.0" layoutY="279.0" prefHeight="53.0" prefWidth="248.0" styleClass="btn_workbench11" stylesheets="@../css/style.css" text="Management" textFill="#c6b6b6">
+
+                     <graphic>
+
+                        <ImageView fitHeight="40.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+
+                           <image>
+
+                              <Image url="@../../iamgess/icons8-management-50.png" />
+
+                           </image>
+
+                        </ImageView>
+
+                     </graphic>
+
+                     <font>
+
+                        <Font name="Century Gothic Bold" size="13.0" />
+
+                     </font>
+
+                  </JFXButton>
+
+                  <JFXButton fx:id="btn_workbench12" layoutX="17.0" layoutY="347.0" prefHeight="53.0" prefWidth="248.0" styleClass="btn_workbench11" stylesheets="@../css/style.css" text="Unlock" textFill="#c6b6b6">
+
+                     <graphic>
+
+                        <ImageView fitHeight="40.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+
+                           <image>
+
+                              <Image url="@../../iamgess/icons8-unlock-50%20(1).png" />
+
+                           </image>
+
+                        </ImageView>
+
+                     </graphic>
+
+                     <font>
+
+                        <Font name="Century Gothic Bold" size="13.0" />
+
+                     </font>
+
+                  </JFXButton>
+
+                  <JFXButton fx:id="btn_workbench111" layoutX="17.0" layoutY="415.0" prefHeight="53.0" prefWidth="248.0" styleClass="btn_workbench11" stylesheets="@../css/style.css" text="Map" textFill="WHITE">
+
+                     <graphic>
+
+                        <ImageView fitHeight="40.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+
+                           <image>
+
+                              <Image url="@../../iamgess/icons8-location-50.png" />
+
+                           </image>
+
+                        </ImageView>
+
+                     </graphic>
+
+                     <font>
+
+                        <Font name="Century Gothic Bold" size="13.0" />
+
+                     </font>
+
+                  </JFXButton>
+
+                  <JFXButton fx:id="btn_workbench1111" layoutX="17.0" layoutY="484.0" prefHeight="53.0" prefWidth="248.0" styleClass="btn_workbench11" stylesheets="@../css/style.css" text="Search" textFill="WHITE">
+
+                     <graphic>
+
+                        <ImageView fitHeight="40.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+
+                           <image>
+
+                              <Image url="@../../iamgess/icons8-search-50.png" />
+
+                           </image>
+
+                        </ImageView>
+
+                     </graphic>
+
+                     <font>
+
+                        <Font name="Century Gothic Bold" size="13.0" />
+
+                     </font>
+
+                  </JFXButton>
+
+                  <ImageView fitHeight="229.0" fitWidth="225.0" layoutX="32.0" layoutY="588.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="@../../iamgess/logoo.png" />
+
+                     </image>
+
+                  </ImageView>
+
+               </children>
+
+            </AnchorPane>
+
+         </children>
+
+      </VBox>
+
+      <Pane prefHeight="781.0" prefWidth="1040.0">
+
+         <children>
+
+            <Pane layoutY="14.0" prefHeight="78.0" prefWidth="1040.0" style="-fx-background-color: #EAEEF4;">
+
+               <children>
+
+                  <TextField fx:id="txt_serach" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="597.0" layoutY="22.0" maxWidth="199.0" minWidth="194.0" prefHeight="42.0" prefWidth="194.0" promptText="Search :" scaleShape="false" unFocusColor="#eeecec">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="13.0" />
+
+                     </font>
+
+                  </TextField>
+
+                  <ImageView fitHeight="53.0" fitWidth="31.0" layoutX="566.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="@../../iamgess/icons8-search-50%20(1).png" />
+
+                     </image></ImageView>
+
+                  <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="864.0" layoutY="19.0" prefHeight="42.0" prefWidth="56.0" style="-fx-background-color: #EAEEF4;">
+
+                     <graphic>
+
+                        <ImageView fitHeight="29.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+
+                           <image>
+
+                              <Image url="@../../iamgess/icons8-settings-50.png" />
+
+                           </image>
+
+                        </ImageView>
+
+                     </graphic>
+
+                  </JFXButton>
+
+                  <ImageView fitHeight="56.0" fitWidth="57.0" layoutX="949.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="@../../iamgess/man-freelancer-runs-computer-icon-isolated-flat-style-white-background-man-freelancer-runs-computer-symbol-icon-99764525.jpg" />
+
+                     </image>
+
+                  </ImageView>
+
+               </children>
+
+            </Pane>
+
+            <Label layoutX="47.0" layoutY="128.0" text="Teste">
+
+               <font>
+
+                  <Font name="Century Gothic Bold" size="34.0" />
+
+               </font>
+
+            </Label>
+
+            <Label layoutX="47.0" layoutY="178.0" text="Never put of off till tommrow what can be done today !">
+
+               <font>
+
+                  <Font name="Century Gothic" size="15.0" />
+
+               </font>
+
+            </Label>
+
+            <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="474.0" layoutY="169.0" prefHeight="31.0" prefWidth="31.0" style="-fx-background-color: #EAEEF4;">
+
+               <graphic>
+
+                  <ImageView fitHeight="29.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="@../../iamgess/icons8-airplane-mode-on-50.png" />
+
+                     </image>
+
+                  </ImageView>
+
+               </graphic>
+
+            </JFXButton>
+
+            <Pane fx:id="pane_1" layoutX="47.0" layoutY="252.0" prefHeight="234.0" prefWidth="146.0" styleClass="pane_1" stylesheets="@../css/style.css">
+
+               <children>
+
+                  <Label layoutX="14.0" layoutY="27.0" text="510" textFill="#f8f8f8">
+
+                     <font>
+
+                        <Font name="Century Gothic Bold" size="30.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <Label layoutX="14.0" layoutY="75.0" text="Go On" textFill="#f8f8f8">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="17.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <Label layoutX="38.0" layoutY="175.0" text="Finish" textFill="#b5aaaa">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="13.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <Label layoutX="78.0" layoutY="175.0" text="100%" textFill="#ebeaea">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="13.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <ProgressBar layoutX="6.0" layoutY="200.0" opacity="0.54" prefHeight="16.0" prefWidth="134.0" progress="0.89" />
+
+               </children>
+
+            </Pane>
+
+            <Label layoutX="52.0" layoutY="218.0" text="Today" textFill="#9a9292">
+
+               <font>
+
+                  <Font name="Century Gothic Bold" size="15.0" />
+
+               </font>
+
+            </Label>
+
+            <Pane fx:id="pane_11" layoutX="210.0" layoutY="252.0" prefHeight="234.0" prefWidth="146.0" stylesheets="@../css/style.css">
+
+               <children>
+
+                  <Label layoutX="14.0" layoutY="27.0" text="210" textFill="#111010">
+
+                     <font>
+
+                        <Font name="Century Gothic Bold" size="30.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <Label layoutX="14.0" layoutY="75.0" text="Intention" textFill="#111010">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="17.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <Label layoutX="38.0" layoutY="175.0" text="Finish" textFill="#b5aaaa">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="13.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <Label layoutX="78.0" layoutY="175.0" text="100%" textFill="#141313">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="13.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <ProgressBar fx:id="progress21" layoutX="7.0" layoutY="200.0" opacity="0.55" prefHeight="16.0" prefWidth="134.0" progress="0.87" styleClass="progress" stylesheets="@../css/style.css" />
+
+               </children>
+
+               <styleClass>
+
+                  <String fx:value="pane_1" />
+
+                  <String fx:value="pane_11" />
+
+               </styleClass>
+
+            </Pane>
+
+            <Pane fx:id="pane_12" layoutX="374.0" layoutY="252.0" prefHeight="234.0" prefWidth="146.0" styleClass="pane_11" stylesheets="@../css/style.css">
+
+               <children>
+
+                  <Label layoutX="14.0" layoutY="27.0" text="100" textFill="#282727">
+
+                     <font>
+
+                        <Font name="Century Gothic Bold" size="30.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <Label layoutX="14.0" layoutY="75.0" text="No Intention" textFill="#282727">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="17.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <Label layoutX="38.0" layoutY="175.0" text="Finish" textFill="#b5aaaa">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="13.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <Label layoutX="78.0" layoutY="175.0" text="100%" textFill="#2c2b2b">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="13.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <ProgressBar fx:id="progress2" layoutX="5.0" layoutY="201.0" opacity="0.55" prefHeight="16.0" prefWidth="134.0" progress="0.87" styleClass="progress" stylesheets="@../css/style.css" />
+
+               </children>
+
+            </Pane>
+
+            <Pane fx:id="pane_111" layoutX="537.0" layoutY="252.0" prefHeight="234.0" prefWidth="146.0" styleClass="pane_111" stylesheets="@../css/style.css">
+
+               <children>
+
+                  <Label layoutX="14.0" layoutY="27.0" text="510" textFill="#f8f8f8">
+
+                     <font>
+
+                        <Font name="Century Gothic Bold" size="30.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <Label layoutX="14.0" layoutY="75.0" text="Go On" textFill="#f8f8f8">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="17.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <ImageView fitHeight="70.0" fitWidth="72.0" layoutX="60.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="@../../iamgess/icons8-target-50.png" />
+
+                     </image>
+
+                  </ImageView>
+
+               </children>
+
+            </Pane>
+
+            <Pane fx:id="pane_1111" layoutX="700.0" layoutY="252.0" prefHeight="234.0" prefWidth="314.0" styleClass="pane_1111" stylesheets="@../css/style.css">
+
+               <children>
+
+                  <Label layoutX="14.0" layoutY="27.0" text="1000" textFill="#f8f8f8">
+
+                     <font>
+
+                        <Font name="Century Gothic Bold" size="30.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <Label layoutX="14.0" layoutY="75.0" text="Distribution" textFill="#f8f8f8">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="17.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <Label layoutX="38.0" layoutY="175.0" text="Finish" textFill="#b5aaaa">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="13.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <Label layoutX="78.0" layoutY="175.0" text="100%" textFill="#ebeaea">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="13.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <ProgressBar fx:id="progress111" layoutX="5.0" layoutY="201.0" prefHeight="16.0" prefWidth="134.0" progress="0.87" styleClass="progress" stylesheets="@../css/style.css" />
+
+                  <ImageView fitHeight="196.0" fitWidth="205.0" layoutX="115.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="@../../iamgess/icons8-comments-100.png" />
+
+                     </image>
+
+                  </ImageView>
+
+                  <ImageView fitHeight="38.0" fitWidth="32.0" layoutX="197.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="@../../iamgess/icons8-instagram-check-mark-50.png" />
+
+                     </image>
+
+                  </ImageView>
+
+                  <Label layoutX="164.0" layoutY="99.0" text="Work has been ">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="15.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <Label layoutX="167.0" layoutY="118.0" text="completed !">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="15.0" />
+
+                     </font>
+
+                  </Label>
+
+               </children>
+
+            </Pane>
+
+            <Label layoutX="694.0" layoutY="218.0" text="Automacally assigned" textFill="#9a9292">
+
+               <font>
+
+                  <Font name="Century Gothic Bold" size="15.0" />
+
+               </font>
+
+            </Label>
+
+            <Pane fx:id="inner_pane1" layoutX="921.0" layoutY="134.0" prefHeight="70.0" prefWidth="72.0" styleClass="inner_pane" stylesheets="@../css/style.css">
+
+               <children>
+
+                  <ImageView fitHeight="56.0" fitWidth="50.0" layoutX="11.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="@../../iamgess/icons8-mail-filter-50.png" />
+
+                     </image>
+
+                  </ImageView>
+
+               </children></Pane>
+
+            <Label layoutX="52.0" layoutY="509.0" text="Mockup" textFill="#9a9292">
+
+               <font>
+
+                  <Font name="Century Gothic Bold" size="15.0" />
+
+               </font>
+
+            </Label>
+
+            <Label layoutX="421.0" layoutY="519.0" text="Company" textFill="#9a9292">
+
+               <font>
+
+                  <Font name="Century Gothic Bold" size="15.0" />
+
+               </font>
+
+            </Label>
+
+            <Pane fx:id="pane_13" layoutX="47.0" layoutY="529.0" prefHeight="78.0" prefWidth="307.0" styleClass="pane_11" stylesheets="@../css/style.css">
+
+               <children>
+
+                  <Label layoutX="78.0" layoutY="19.0" text="AIR PLANE" textFill="#323131">
+
+                     <font>
+
+                        <Font name="Century Gothic Bold" size="20.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <Label layoutX="78.0" layoutY="44.0" text="Wajid HucYan" textFill="#9a9696">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="17.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <ImageView fitHeight="56.0" fitWidth="50.0" layoutX="12.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="@../../iamgess/icons8-airplane-mode-on-50.png" />
+
+                     </image>
+
+                  </ImageView>
+
+                  <ImageView fitHeight="43.0" fitWidth="50.0" layoutX="264.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="@../../iamgess/dot.png" />
+
+                     </image>
+
+                  </ImageView>
+
+               </children>
+
+            </Pane>
+
+            <Pane fx:id="pane_131" layoutX="48.0" layoutY="627.0" prefHeight="78.0" prefWidth="307.0" styleClass="pane_11" stylesheets="@../css/style.css">
+
+               <children>
+
+                  <Label layoutX="78.0" layoutY="19.0" text="TELPHONE" textFill="#323131">
+
+                     <font>
+
+                        <Font name="Century Gothic Bold" size="20.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <Label layoutX="78.0" layoutY="44.0" text="Salaar HucYan" textFill="#9a9696">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="17.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <ImageView fitHeight="56.0" fitWidth="50.0" layoutX="12.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="@../../iamgess/icons8-telephone-50.png" />
+
+                     </image>
+
+                  </ImageView>
+
+                  <ImageView fitHeight="43.0" fitWidth="50.0" layoutX="264.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="@../../iamgess/dot.png" />
+
+                     </image>
+
+                  </ImageView>
+
+               </children>
+
+            </Pane>
+
+            <Pane fx:id="pane_1311" layoutX="50.0" layoutY="725.0" prefHeight="78.0" prefWidth="307.0" styleClass="pane_11" stylesheets="@../css/style.css">
+
+               <children>
+
+                  <Label layoutX="78.0" layoutY="19.0" text="BUS" textFill="#323131">
+
+                     <font>
+
+                        <Font name="Century Gothic Bold" size="20.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <Label layoutX="78.0" layoutY="44.0" text="john Edward" textFill="#9a9696">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="17.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <ImageView fitHeight="56.0" fitWidth="50.0" layoutX="12.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="@../../iamgess/icons8-bus-50.png" />
+
+                     </image>
+
+                  </ImageView>
+
+                  <ImageView fitHeight="43.0" fitWidth="50.0" layoutX="263.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="@../../iamgess/dot.png" />
+
+                     </image>
+
+                  </ImageView>
+
+               </children>
+
+            </Pane>
+
+            <Pane fx:id="pane_132" layoutX="413.0" layoutY="538.0" prefHeight="262.0" prefWidth="596.0" styleClass="pane_11" stylesheets="@../css/style.css">
+
+               <children>
+
+                  <Label layoutX="32.0" layoutY="48.0" text="Ui Java Company  " textFill="#323131">
+
+                     <font>
+
+                        <Font name="Century Gothic Bold" size="20.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <ImageView fitHeight="196.0" fitWidth="194.0" layoutX="394.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="@../../iamgess/images.jpg" />
+
+                     </image>
+
+                  </ImageView>
+
+                  <Label layoutX="60.0" layoutY="106.0" textFill="#323131">
+
+                     <font>
+
+                        <Font name="Century Gothic Bold" size="20.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <Label layoutX="32.0" layoutY="87.0" text="Lorem Ipsum has been the industry's standard ">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="15.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <Label layoutX="32.0" layoutY="109.0" text="dummy text ever since the 1500s,">
+
+                     <font>
+
+                        <Font name="Century Gothic" size="15.0" />
+
+                     </font>
+
+                  </Label>
+
+                  <JFXButton fx:id="btn_workbench11111" layoutX="32.0" layoutY="195.0" prefHeight="43.0" prefWidth="163.0" styleClass="btn_workbench11" stylesheets="@../css/style.css" text="Unlock" textFill="WHITE">
+
+                     <graphic>
+
+                        <ImageView fitHeight="40.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+
+                           <image>
+
+                              <Image url="@../../iamgess/icons8-unlock-50.png" />
+
+                           </image>
+
+                        </ImageView>
+
+                     </graphic>
+
+                     <font>
+
+                        <Font name="Century Gothic Bold" size="13.0" />
+
+                     </font>
+
+                  </JFXButton>
+
+                  <ImageView fitHeight="43.0" fitWidth="50.0" layoutX="284.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true">
+
+                     <image>
+
+                        <Image url="@../../iamgess/icons8-mail-filter-50.png" />
+
+                     </image>
+
+                  </ImageView>
+
+               </children>
+
+            </Pane>
+
+         </children>
+
+      </Pane>
+
+   </children>
+
+</HBox>

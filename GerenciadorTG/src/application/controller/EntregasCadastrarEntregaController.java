@@ -2,15 +2,14 @@ package application.controller;
 
 import java.io.IOException;
 
-import javax.swing.JOptionPane;
-
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class EntregasCadastrarEntregaController {
@@ -43,51 +42,75 @@ public class EntregasCadastrarEntregaController {
     private Button dropdownCalendario;
 
     @FXML
-    private TextField textAluno;
+    void abrirCadastrarNota(MouseEvent event) {
+        try {
 
-    @FXML
-    private TextField textAtividade;
-
-    @FXML
-    void abrirCadastrarNota(MouseEvent event) throws IOException {
-        Stage currentStage = (Stage) botaoCadastrarNota.getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application/ui/EntregasCadastrarNota.fxml"));
-        Scene cadastrarNota = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setTitle("Entregas: Cadastrar Nota");
-        stage.setScene(cadastrarNota);  
-        currentStage.close();
-        stage.show();
+            Stage currentStage = (Stage) botaoCadastrarNota.getScene().getWindow();
+            
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application/ui/EntregasCadastrarNota.fxml"));
+            Parent root = fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Cadastro de Notas");
+            stage.setResizable(false);
+            stage.setScene(new Scene(root));
+            
+            stage.initModality(Modality.APPLICATION_MODAL);
+            
+            currentStage.close();
+            
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+            
+        }
     }
 
     @FXML
-    void abrirDevolutiva(MouseEvent event) throws IOException {
-        Stage currentStage = (Stage) botaoDevolutiva.getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application/ui/EntregasDevolutiva.fxml"));
-        Scene devolutiva = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setTitle("Entregas: Devolutiva");
-        stage.setScene(devolutiva);  
-        currentStage.close();
-        stage.show();
+    void abrirDevolutiva(MouseEvent event) {
+        try {
+
+            Stage currentStage = (Stage) botaoDevolutiva.getScene().getWindow();
+            
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application/ui/EntregasDevolutiva.fxml"));
+            Parent root = fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Cadastro de Devolutiva");
+            stage.setResizable(false);
+            stage.setScene(new Scene(root));
+            
+            stage.initModality(Modality.APPLICATION_MODAL);
+            
+            currentStage.close();
+            
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+            
+        }
     }
 
     @FXML
-    void abrirHome(MouseEvent event) throws IOException {
-        Stage currentStage = (Stage) botaoHome.getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application/ui/Home.fxml"));
-        Scene home = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setTitle("Home");
-        stage.setScene(home);  
-        stage.setResizable(false);
-        currentStage.close();
-        stage.show();
-    }
+    void abrirHome(MouseEvent event) {
+        try {
 
-    @FXML
-    void confirmarEntrega(MouseEvent event) {
-        JOptionPane.showMessageDialog(null, "Entrega confirmada!!!", "Confirmado!", 1);
+            Stage currentStage = (Stage) botaoHome.getScene().getWindow();
+            
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application/ui/Home.fxml"));
+            Parent root = fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Gerenciador de Tg's");
+            stage.setResizable(false);
+            stage.setScene(new Scene(root));
+            
+            stage.initModality(Modality.APPLICATION_MODAL);
+            
+            currentStage.close();
+            
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+            
+        }
     }
-
+    
 }

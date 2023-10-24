@@ -14,7 +14,7 @@ public class App extends Application {
 		try {
 			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("ui/Home.fxml"));
 			Scene scene = new Scene(root);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			scene.getStylesheets().add(getClass().getResource("/application/css/style.css").toExternalForm());
 			primaryStage.setTitle("Gerenciador de Tg's");
 			primaryStage.setResizable(false);
 			primaryStage.setScene(scene);

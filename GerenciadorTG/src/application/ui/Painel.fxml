@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
@@ -18,38 +18,38 @@
                   <Pane layoutX="-6.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #008000;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                   <HBox layoutX="773.0" layoutY="36.0" prefHeight="100.0" prefWidth="980.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
                      <children>
-                        <Button mnemonicParsing="false" opacity="0.91" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: whitw;" text="Dashboard">
-                           <font>
-                              <Font name="System Bold" size="20.0" />
-                           </font>
+                        <JFXButton alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="200.0" text="botao1">
                            <graphic>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
-                        </Button>
-                        <Button mnemonicParsing="false" opacity="0.91" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: whitw;" text="ADD">
                            <font>
-                              <Font name="System Bold" size="20.0" />
+                              <Font size="28.0" />
                            </font>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="200.0" text="botao2">
                            <graphic>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
-                        </Button>
-                        <Button mnemonicParsing="false" opacity="0.91" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: whitw;" text="Report">
                            <font>
-                              <Font name="System Bold" size="20.0" />
+                              <Font size="28.0" />
                            </font>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="200.0" text="botao3">
                            <graphic>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
-                        </Button>
-                        <Button mnemonicParsing="false" opacity="0.91" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: whitw;" text="BackUp">
                            <font>
-                              <Font name="System Bold" size="20.0" />
+                              <Font size="28.0" />
                            </font>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="200.0" text="botao4">
                            <graphic>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
-                        </Button>
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </JFXButton>
                      </children></HBox>
                </children>
             </AnchorPane>
@@ -59,38 +59,30 @@
                <children>
                   <VBox layoutX="-6.0" layoutY="100.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
                      <children>
-                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="980.0" style="-fx-background-color: green;" text="Dashboard">
-                           <font>
-                              <Font name="System Bold" size="20.0" />
-                           </font>
+                        <JFXButton fx:id="btn_agendamentos" alignment="BASELINE_LEFT" prefHeight="80.0" prefWidth="960.0" stylesheets="@../css/style.css" text="Agendamentos">
                            <graphic>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
-                        </Button>
-                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="980.0" style="-fx-background-color: green;" text="ADD">
                            <font>
-                              <Font name="System Bold" size="20.0" />
+                              <Font size="28.0" />
                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="btn_entregas" alignment="BASELINE_LEFT" prefHeight="80.0" prefWidth="960.0" text="Entregas">
                            <graphic>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
-                        </Button>
-                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="980.0" style="-fx-background-color: green;" text="Report">
                            <font>
-                              <Font name="System Bold" size="20.0" />
+                              <Font size="28.0" />
                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="btn_relatorios" alignment="BASELINE_LEFT" prefHeight="80.0" prefWidth="960.0" text="relatórios">
                            <graphic>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
                            </graphic>
-                        </Button>
-                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="980.0" style="-fx-background-color: green;" text="BackUp">
                            <font>
-                              <Font name="System Bold" size="20.0" />
+                              <Font size="28.0" />
                            </font>
-                           <graphic>
-                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
-                        </Button>
+                        </JFXButton>
                      </children>
                   </VBox>
                </children>

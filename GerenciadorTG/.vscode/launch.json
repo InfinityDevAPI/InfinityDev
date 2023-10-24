@@ -3,13 +3,6 @@
 	"configurations": [
 		{
 			"type": "java",
-			"name": "App",
-			"request": "launch",
-			"mainClass": "Gerenciador/application.App",
-			"projectName": "GerenciadorTG"
-		},
-		{
-			"type": "java",
 			"name": "Main",
 			"request": "launch",
 			"mainClass": "Gerenciador/application.Main",
