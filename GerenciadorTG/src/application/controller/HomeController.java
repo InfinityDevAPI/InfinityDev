@@ -118,7 +118,7 @@ public class HomeController {
                 // Ler e exibir o conteúdo do arquivo CSV selecionado
                 importarArquivoCSV(arquivoSelecionado);
             } catch (IOException e) {
-                exibirAlerta("Erro", "Falha ao importar o CSV", e.getMessage(), AlertType.ERROR);
+                exibirAlerta("Erro", "Falha ao importar o CSV", AlertType.ERROR);
             }
         }
     }
@@ -135,13 +135,14 @@ public class HomeController {
                 conteudo.append(linha).append("\n");
             }
         }
+     // Mostra um aviso de sucesso
+     exibirAlerta("Sucesso", "CSV importado com sucesso!",AlertType.INFORMATION);
     }
 
-    private void exibirAlerta(String titulo, String cabecalho, String conteudo, AlertType tipoAlerta) {
+    private void exibirAlerta(String titulo, String cabecalho, AlertType tipoAlerta) {
         Alert alerta = new Alert(tipoAlerta);
         alerta.setTitle(titulo);
         alerta.setHeaderText(cabecalho);
-        alerta.setContentText(conteudo);
         alerta.showAndWait();
     }
 }
