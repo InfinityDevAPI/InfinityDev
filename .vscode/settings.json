@@ -23,6 +23,7 @@
 		"GerenciamentoTG/src/lib/javafx.web.jar",
 		"GerenciamentoTG/src/lib/javafx-swt.jar",
 		"GerenciamentoTG/src/lib/mysql-connector-j-8.0.33.jar",
-		"GerenciamentoTG/src/lib/opencsv-5.8.jar"
+		"GerenciamentoTG/src/lib/opencsv-5.8.jar",
+		"c:\\Users\\User\\Downloads\\jfoenix\\jfoenix\\jfoenix-9.0.10.jar"
 	]
 }

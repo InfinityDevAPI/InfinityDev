@@ -1,17 +1,22 @@
 package application.controller;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
-
-import javax.swing.JOptionPane;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 
 public class HomeController {
 	
@@ -28,7 +33,6 @@ public class HomeController {
     @FXML
     private Button botaoRelatorios;
     
-
     @FXML
     void abrirAgendamentos(MouseEvent event) {
         try {
@@ -103,8 +107,41 @@ public class HomeController {
         }
     }
 
-    @FXML
-    void importarCSV(MouseEvent event) {
-        JOptionPane.showMessageDialog(null, "CSV importado com sucesso!!!", "Importado!", 1);
+   @FXML
+    void importarCSV() {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Arquivos CSV", "*.csv"));
+        File arquivoSelecionado = fileChooser.showOpenDialog(obterJanela());
+
+        if (arquivoSelecionado != null) {
+            try {
+                // Ler e exibir o conteúdo do arquivo CSV selecionado
+                importarArquivoCSV(arquivoSelecionado);
+            } catch (IOException e) {
+                exibirAlerta("Erro", "Falha ao importar o CSV", e.getMessage(), AlertType.ERROR);
+            }
+        }
+    }
+
+    private Window obterJanela() {
+        return botaoImportarCSV.getScene().getWindow();
+    }
+
+    private void importarArquivoCSV(File arquivo) throws IOException {
+        StringBuilder conteudo = new StringBuilder();
+        try (BufferedReader leitor = new BufferedReader(new FileReader(arquivo))) {
+            String linha;
+            while ((linha = leitor.readLine()) != null) {
+                conteudo.append(linha).append("\n");
+            }
+        }
+    }
+
+    private void exibirAlerta(String titulo, String cabecalho, String conteudo, AlertType tipoAlerta) {
+        Alert alerta = new Alert(tipoAlerta);
+        alerta.setTitle(titulo);
+        alerta.setHeaderText(cabecalho);
+        alerta.setContentText(conteudo);
+        alerta.showAndWait();
     }
 }

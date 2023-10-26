@@ -3,6 +3,20 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "Main",
+			"request": "launch",
+			"mainClass": "Gerenciador/application.Main",
+			"projectName": "GerenciadorTG"
+		},
+		{
+			"type": "java",
+			"name": "App",
+			"request": "launch",
+			"mainClass": "Gerenciador/application.App",
+			"projectName": "GerenciadorTG"
+		},
+		{
+			"type": "java",
 			"name": "Connect",
 			"request": "launch",
 			"mainClass": "Connect",
