@@ -8,93 +8,93 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="450.0" maxWidth="800.0" minHeight="450.0" minWidth="800.0" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.RelatoriosController">
+<AnchorPane maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.RelatoriosController">
    <children>
-      <ImageView fitHeight="450.0" fitWidth="800.0" preserveRatio="true">
+      <ImageView fitHeight="720.0" fitWidth="1280.0" preserveRatio="true">
          <image>
             <Image url="@../imagens/Relatórios.png" />
          </image>
       </ImageView>
-      <Button fx:id="dropdownTipoTG" layoutX="199.0" layoutY="72.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="28.0" prefWidth="144.0" style="-fx-background-color: green;" />
-      <Button fx:id="dropdownAluno" layoutX="456.0" layoutY="72.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="28.0" prefWidth="144.0" style="-fx-background-color: green;" />
-      <TextArea fx:id="textDadosEntrega" layoutX="609.0" layoutY="81.0" opacity="0.5" prefHeight="105.0" prefWidth="144.0" style="-fx-background-color: green;" />
-      <TextArea fx:id="textDadosDevolutiva" layoutX="609.0" layoutY="217.0" opacity="0.5" prefHeight="105.0" prefWidth="144.0" style="-fx-background-color: green;" />
-      <TextField fx:id="textNotaEntrega" alignment="CENTER" layoutX="706.0" layoutY="332.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="28.0" prefWidth="49.0" style="-fx-background-color: green;" />
-      <TextField fx:id="textMediaNotas" alignment="CENTER" layoutX="706.0" layoutY="369.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="28.0" prefWidth="49.0" style="-fx-background-color: green;" />
-      <TextField fx:id="textNota1" alignment="CENTER" layoutX="408.0" layoutY="336.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="15.0" prefWidth="80.0" style="-fx-background-color: green;">
+      <Button fx:id="dropdownTipoTG" layoutX="399.0" layoutY="87.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="28.0" prefWidth="144.0" style="-fx-background-color: green;" />
+      <Button fx:id="dropdownAluno" layoutX="656.0" layoutY="87.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="28.0" prefWidth="144.0" style="-fx-background-color: green;" />
+      <TextArea fx:id="textDadosEntrega" layoutX="809.0" layoutY="96.0" opacity="0.5" prefHeight="105.0" prefWidth="144.0" style="-fx-background-color: green;" />
+      <TextArea fx:id="textDadosDevolutiva" layoutX="809.0" layoutY="232.0" opacity="0.5" prefHeight="105.0" prefWidth="144.0" style="-fx-background-color: green;" />
+      <TextField fx:id="textNotaEntrega" alignment="CENTER" layoutX="906.0" layoutY="347.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="28.0" prefWidth="49.0" style="-fx-background-color: green;" />
+      <TextField fx:id="textMediaNotas" alignment="CENTER" layoutX="906.0" layoutY="384.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="28.0" prefWidth="49.0" style="-fx-background-color: green;" />
+      <TextField fx:id="textNota1" alignment="CENTER" layoutX="608.0" layoutY="350.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="15.0" prefWidth="80.0" style="-fx-background-color: green;">
          <font>
             <Font size="8.0" />
          </font>
       </TextField>
-      <TextField fx:id="textNota2" alignment="CENTER" layoutX="408.0" layoutY="356.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="15.0" prefWidth="80.0" style="-fx-background-color: green;" text="Nota">
+      <TextField fx:id="textNota2" alignment="CENTER" layoutX="608.0" layoutY="370.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="15.0" prefWidth="80.0" style="-fx-background-color: green;" text="Nota">
          <font>
             <Font size="8.0" />
          </font>
       </TextField>
-      <TextField fx:id="textNota3" alignment="CENTER" layoutX="408.0" layoutY="375.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="15.0" prefWidth="80.0" style="-fx-background-color: green;" text="Nota">
+      <TextField fx:id="textNota3" alignment="CENTER" layoutX="608.0" layoutY="389.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="15.0" prefWidth="80.0" style="-fx-background-color: green;" text="Nota">
          <font>
             <Font size="8.0" />
          </font>
       </TextField>
-      <TextField fx:id="textEntrega1" alignment="CENTER" layoutX="312.0" layoutY="336.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="15.0" prefWidth="80.0" style="-fx-background-color: green;">
+      <TextField fx:id="textEntrega1" alignment="CENTER" layoutX="512.0" layoutY="350.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="15.0" prefWidth="80.0" style="-fx-background-color: green;">
          <font>
             <Font size="8.0" />
          </font>
       </TextField>
-      <TextField fx:id="textEntrega2" alignment="CENTER" layoutX="312.0" layoutY="356.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="15.0" prefWidth="80.0" style="-fx-background-color: green;" text="Entrega">
+      <TextField fx:id="textEntrega2" alignment="CENTER" layoutX="512.0" layoutY="370.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="15.0" prefWidth="80.0" style="-fx-background-color: green;" text="Entrega">
          <font>
             <Font size="8.0" />
          </font>
       </TextField>
-      <TextField fx:id="textEntrega3" alignment="CENTER" layoutX="312.0" layoutY="375.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="15.0" prefWidth="80.0" style="-fx-background-color: green;" text="Entrega">
+      <TextField fx:id="textEntrega3" alignment="CENTER" layoutX="512.0" layoutY="389.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="15.0" prefWidth="80.0" style="-fx-background-color: green;" text="Entrega">
          <font>
             <Font size="8.0" />
          </font>
       </TextField>
-      <Button fx:id="botaoExportar" layoutX="131.0" layoutY="356.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#gerarRelatório" opacity="0.5" prefHeight="26.0" prefWidth="135.0" style="-fx-background-color: green;" />
-      <Button fx:id="botaoHome" layoutX="62.0" layoutY="337.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#abrirHome" opacity="0.5" prefHeight="46.0" prefWidth="49.0" style="-fx-background-color: green;" />
-      <TextField fx:id="textAtividade" alignment="CENTER" layoutX="421.0" layoutY="116.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="28.0" prefWidth="36.0" style="-fx-background-color: green;">
+      <Button fx:id="botaoExportar" layoutX="294.0" layoutY="370.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="26.0" prefWidth="135.0" style="-fx-background-color: green;" />
+      <Button fx:id="botaoHome" layoutX="225.0" layoutY="351.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#abrirHome" opacity="0.5" prefHeight="46.0" prefWidth="49.0" style="-fx-background-color: green;" />
+      <TextField fx:id="textAtividade" alignment="CENTER" layoutX="539.0" layoutY="125.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="28.0" prefWidth="36.0" style="-fx-background-color: green;">
          <font>
             <Font size="11.0" />
          </font>
       </TextField>
-      <TextField fx:id="textNomeAluno" alignment="CENTER" layoutX="48.0" layoutY="90.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="12.0" prefWidth="140.0" style="-fx-background-color: green;">
+      <TextField fx:id="textNomeAluno" alignment="CENTER" layoutX="65.0" layoutY="99.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="12.0" prefWidth="140.0" style="-fx-background-color: green;">
          <font>
             <Font size="7.0" />
          </font>
       </TextField>
-      <TextField fx:id="textEmailAluno" alignment="CENTER" layoutX="48.0" layoutY="121.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="12.0" prefWidth="140.0" style="-fx-background-color: green;">
+      <TextField fx:id="textEmailAluno" alignment="CENTER" layoutX="65.0" layoutY="130.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="12.0" prefWidth="140.0" style="-fx-background-color: green;">
          <font>
             <Font size="7.0" />
          </font>
       </TextField>
-      <TextField fx:id="textEmailInstitucionalAluno" alignment="CENTER" layoutX="48.0" layoutY="150.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="12.0" prefWidth="140.0" style="-fx-background-color: green;">
+      <TextField fx:id="textEmailInstitucionalAluno" alignment="CENTER" layoutX="65.0" layoutY="159.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="12.0" prefWidth="140.0" style="-fx-background-color: green;">
          <font>
             <Font size="7.0" />
          </font>
       </TextField>
-      <TextField fx:id="textAptoDefesa" alignment="CENTER" layoutX="48.0" layoutY="183.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="12.0" prefWidth="140.0" style="-fx-background-color: green;">
+      <TextField fx:id="textAptoDefesa" alignment="CENTER" layoutX="65.0" layoutY="192.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="12.0" prefWidth="140.0" style="-fx-background-color: green;">
          <font>
             <Font size="7.0" />
          </font>
       </TextField>
-      <TextField fx:id="textDataDefesa" alignment="CENTER" layoutX="48.0" layoutY="211.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="12.0" prefWidth="140.0" style="-fx-background-color: green;">
+      <TextField fx:id="textDataDefesa" alignment="CENTER" layoutX="65.0" layoutY="220.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="12.0" prefWidth="140.0" style="-fx-background-color: green;">
          <font>
             <Font size="7.0" />
          </font>
       </TextField>
-      <TextField fx:id="textNomeOrientador" alignment="CENTER" layoutX="48.0" layoutY="267.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="12.0" prefWidth="140.0" style="-fx-background-color: green;">
+      <TextField fx:id="textNomeOrientador" alignment="CENTER" layoutX="65.0" layoutY="276.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="12.0" prefWidth="140.0" style="-fx-background-color: green;">
          <font>
             <Font size="7.0" />
          </font>
       </TextField>
-      <TextField fx:id="textEmailOrientador" alignment="CENTER" layoutX="48.0" layoutY="298.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="12.0" prefWidth="140.0" style="-fx-background-color: green;">
+      <TextField fx:id="textEmailOrientador" alignment="CENTER" layoutX="65.0" layoutY="307.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="12.0" prefWidth="140.0" style="-fx-background-color: green;">
          <font>
             <Font size="7.0" />
          </font>
       </TextField>
-      <Button fx:id="botaoTG1" layoutX="353.0" layoutY="72.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="25.0" prefWidth="31.0" style="-fx-background-color: green;" />
-      <Button fx:id="botaoTG12" layoutX="384.0" layoutY="73.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="25.0" prefWidth="31.0" style="-fx-background-color: green;" />
-      <Button fx:id="botaoTG2" layoutX="415.0" layoutY="72.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="26.0" prefWidth="33.0" style="-fx-background-color: green;" />
+      <Button fx:id="botaoTG1" layoutX="486.0" layoutY="87.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="25.0" prefWidth="31.0" style="-fx-background-color: green;" />
+      <Button fx:id="botaoTG12" layoutX="517.0" layoutY="88.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="25.0" prefWidth="31.0" style="-fx-background-color: green;" />
+      <Button fx:id="botaoTG2" layoutX="548.0" layoutY="88.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="26.0" prefWidth="33.0" style="-fx-background-color: green;" />
    </children>
 </AnchorPane>

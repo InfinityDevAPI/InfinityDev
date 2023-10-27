@@ -5,15 +5,15 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="450.0" maxWidth="800.0" minHeight="450.0" minWidth="800.0" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AgendamentosController">
+<AnchorPane maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AgendamentosController">
    <children>
-      <ImageView fitHeight="450.0" fitWidth="800.0" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView fitHeight="720.0" fitWidth="1280.0" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../imagens/Agendamentos.png" />
          </image>
       </ImageView>
-      <Button fx:id="botaoEntregas" layoutX="640.0" layoutY="115.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#abrirEntregas" opacity="0.0" prefHeight="26.0" prefWidth="115.0" style="-fx-background-radius: 20px; -fx-background-color: green;" text="Entregas" />
-      <Button fx:id="botaoDefesasTG" layoutX="640.0" layoutY="308.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#abrirDefesasTG" opacity="0.0" prefHeight="26.0" prefWidth="115.0" style="-fx-background-radius: 20px; -fx-background-color: green;" />
-      <Button fx:id="botaoHome" layoutX="674.0" layoutY="202.0" minWidth="37.0" mnemonicParsing="false" onMouseClicked="#abrirHome" opacity="0.0" prefHeight="45.0" prefWidth="47.0" style="-fx-background-color: green;" text="Home" />
+      <Button fx:id="botaoEntregas" layoutX="1024.0" layoutY="185.0" minHeight="40.0" mnemonicParsing="false" onMouseClicked="#abrirEntregas" opacity="0.0" prefHeight="40.0" prefWidth="184.0" style="-fx-background-radius: 20px; -fx-background-color: green;" />
+      <Button fx:id="botaoDefesasTG" layoutX="1024.0" layoutY="495.0" minHeight="40.0" minWidth="184.0" mnemonicParsing="false" onMouseClicked="#abrirDefesasTG" opacity="0.0" prefHeight="40.0" prefWidth="184.0" style="-fx-background-radius: 20px; -fx-background-color: green;" />
+      <Button fx:id="botaoHome" layoutX="1078.0" layoutY="324.0" minHeight="40.0" minWidth="40.0" mnemonicParsing="false" onMouseClicked="#abrirHome" opacity="0.0" prefHeight="72.0" prefWidth="76.0" style="-fx-background-color: green;" />
    </children>
 </AnchorPane>
