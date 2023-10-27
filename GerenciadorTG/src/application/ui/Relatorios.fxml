@@ -51,7 +51,7 @@
             <Font size="8.0" />
          </font>
       </TextField>
-      <Button fx:id="botaoExportar" layoutX="131.0" layoutY="356.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="26.0" prefWidth="135.0" style="-fx-background-color: green;" />
+      <Button fx:id="botaoExportar" layoutX="131.0" layoutY="356.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#gerarRelatório" opacity="0.5" prefHeight="26.0" prefWidth="135.0" style="-fx-background-color: green;" />
       <Button fx:id="botaoHome" layoutX="62.0" layoutY="337.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#abrirHome" opacity="0.5" prefHeight="46.0" prefWidth="49.0" style="-fx-background-color: green;" />
       <TextField fx:id="textAtividade" alignment="CENTER" layoutX="421.0" layoutY="116.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="28.0" prefWidth="36.0" style="-fx-background-color: green;">
          <font>

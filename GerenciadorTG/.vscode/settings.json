@@ -13,5 +13,6 @@
 		"c:/Program Files/Java/javafx-sdk-21/lib/javafx.swing.jar",
 		"c:/Program Files/Java/javafx-sdk-21/lib/javafx.web.jar",
 		"c:/Program Files/Java/javafx-sdk-21/lib/javafx-swt.ja"
-	]
+	],
+	"java.debug.settings.onBuildFailureProceed": true
 }

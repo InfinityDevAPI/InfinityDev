@@ -1,19 +1,26 @@
 package application.controller;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-public class AgendamentoEntregasController {
+public class AgendamentoEntregasController implements Initializable {
 
     @FXML
     private Button botaoConfirmar;
@@ -28,10 +35,13 @@ public class AgendamentoEntregasController {
     private Button botaoHome;
 
     @FXML
+    private ComboBox<String> comboBox;
+
+    @FXML
     private TextArea descricaoEntrega;
 
     @FXML
-    private Button dropdownCalendario;
+    private DatePicker dropdownCalendario;
 
     @FXML
     private Button dropdownEntrega;
@@ -85,6 +95,12 @@ public class AgendamentoEntregasController {
             e.printStackTrace();
             
         }
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        ObservableList<String> list = FXCollections.observableArrayList("JavaFX", "Python", "FXML");
+        comboBox.setItems(list);
     }
     
 }

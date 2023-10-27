@@ -2,6 +2,8 @@ package application.controller;
 
 import java.io.IOException;
 
+import javax.swing.JOptionPane;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -112,6 +114,11 @@ public class RelatoriosController {
             e.printStackTrace();
             
         }
+    }
+
+    @FXML
+    void gerarRelatório(MouseEvent event) {
+        JOptionPane.showMessageDialog(null, "Relatório Gerado", null, 0);
     }
     
 }
