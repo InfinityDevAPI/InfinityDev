@@ -3,6 +3,13 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "ConexaoJdbc",
+			"request": "launch",
+			"mainClass": "Gerenciador/conexao.ConexaoJdbc",
+			"projectName": "GerenciadorTG"
+		},
+		{
+			"type": "java",
 			"name": "Main",
 			"request": "launch",
 			"mainClass": "Gerenciador/application.Main",
