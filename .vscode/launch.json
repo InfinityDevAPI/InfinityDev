@@ -3,6 +3,13 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "CorrecaoCSV",
+			"request": "launch",
+			"mainClass": "Gerenciador/application.controller.CorrecaoCSV",
+			"projectName": "GerenciadorTG"
+		},
+		{
+			"type": "java",
 			"name": "ConexaoJdbc",
 			"request": "launch",
 			"mainClass": "Gerenciador/conexao.ConexaoJdbc",

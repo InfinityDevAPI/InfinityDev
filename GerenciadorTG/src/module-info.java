@@ -3,7 +3,7 @@ module Gerenciador {
 	requires javafx.controls;
 	requires javafx.fxml;
 	requires java.desktop;
-	requires java.sql;
+	requires transitive java.sql;
 	
 	exports application;
 	exports application.controller;
