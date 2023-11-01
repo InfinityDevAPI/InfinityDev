@@ -12,9 +12,13 @@ import java.util.Date;
 
 public class CorrecaoCSV {
     public static void main(String[] args) {
+        processarArquivoCSV("dados.csv", "dados_corrigidos.csv");
+    }
+
+    public static void processarArquivoCSV(String arquivoEntrada, String arquivoSaida) {
         try {
-            BufferedReader br = new BufferedReader(new FileReader("dados.csv"));
-            BufferedWriter bw = new BufferedWriter(new FileWriter("dados_corrijidos.csv"));
+            BufferedReader br = new BufferedReader(new FileReader(arquivoEntrada));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(arquivoSaida));
 
             String linha;
             boolean isHeader = true;
@@ -59,11 +63,11 @@ public class CorrecaoCSV {
         try {
             // Remova as aspas duplas se estiverem presentes
             string = string.replace("\"", "");
-    
+
             if (string != null && !string.trim().isEmpty() && !string.equalsIgnoreCase("null")) {
                 SimpleDateFormat inputFormat = new SimpleDateFormat("M/d/yyyy H:mm:ss");
                 Date parsedDate = inputFormat.parse(string);
-    
+
                 return new Timestamp(parsedDate.getTime());
             } else {
                 return null;
@@ -73,7 +77,7 @@ public class CorrecaoCSV {
             return null;
         }
     }
-    
+
     public static String corrigirNome(String nome) {
         nome = nome.trim();
         nome = nome.substring(0, 1).toUpperCase() + nome.substring(1).toLowerCase();
