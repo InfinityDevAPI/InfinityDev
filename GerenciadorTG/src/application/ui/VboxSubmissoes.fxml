@@ -7,13 +7,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane fx:id="vboxSubmissoes" stylesheets="@../css/Menu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.VboxSubmissoesController">
+<AnchorPane fx:id="vboxSubmissoes" prefHeight="655.0" prefWidth="180.0" stylesheets="@../css/Menu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.VboxSubmissoesController">
    <children>
-      <VBox prefHeight="620.0" prefWidth="170.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button fx:id="btnSubEntregas" mnemonicParsing="false" onAction="#painelSubEntregas" prefHeight="50.0" prefWidth="155.0" styleClass="botoes" text="Entregas">
+            <Button fx:id="btnSubEntregas" mnemonicParsing="false" onAction="#painelSubEntregas" prefHeight="60.0" prefWidth="160.0" styleClass="botoes" text="Entregas">
                <VBox.margin>
-                  <Insets left="5.0" right="10.0" top="150.0" />
+                  <Insets right="20.0" top="120.0" />
                </VBox.margin>
                <graphic>
                   <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
@@ -23,17 +23,17 @@
                   </ImageView>
                </graphic>
             </Button>
-            <ImageView fitHeight="113.0" fitWidth="196.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="120.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../Downloads/Slider/src/sample/Images/logo.png" />
                </image>
                <VBox.margin>
-                  <Insets top="50.0" />
+                  <Insets top="60.0" />
                </VBox.margin>
             </ImageView>
-            <Button fx:id="btnSubDevolutivas" mnemonicParsing="false" onAction="#painelSubDevolutivas" prefHeight="52.0" prefWidth="155.0" styleClass="botoes" text="Devolutivas">
+            <Button fx:id="btnSubDevolutivas" mnemonicParsing="false" onAction="#painelSubDevolutivas" prefHeight="60.0" prefWidth="160.0" styleClass="botoes" text="Devolutivas">
                <VBox.margin>
-                  <Insets left="5.0" right="10.0" top="50.0" />
+                  <Insets right="20.0" top="60.0" />
                </VBox.margin>
                <graphic>
                   <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
@@ -43,16 +43,16 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="btnSubNotas" mnemonicParsing="false" onAction="#painelSubNotas" prefHeight="52.0" prefWidth="155.0" styleClass="botoes" text="Notas">
+            <Button fx:id="btnSubNotas" mnemonicParsing="false" onAction="#painelSubNotas" prefHeight="60.0" prefWidth="160.0" styleClass="botoes" text="Notas">
                <graphic>
-                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../imagens/notas.png" />
                      </image>
                   </ImageView>
                </graphic>
                <VBox.margin>
-                  <Insets left="5.0" right="10.0" top="50.0" />
+                  <Insets right="20.0" top="60.0" />
                </VBox.margin>
             </Button>
          </children>

@@ -5,11 +5,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AnchorRelatoriosController">
+<AnchorPane prefHeight="655.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AnchorRelatoriosController">
    <children>
-      <Pane prefHeight="620.0" prefWidth="1100.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label layoutX="457.0" layoutY="14.0" prefHeight="29.0" prefWidth="186.0" text="RELATÓRIOS" textFill="#007f00">
+            <Label layoutX="367.0" layoutY="14.0" prefHeight="50.0" prefWidth="186.0" text="RELATÓRIOS" textFill="#007f00">
                <font>
                   <Font size="32.0" />
                </font>

@@ -7,13 +7,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane fx:id="vboxEntregas" stylesheets="@../css/Menu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.VboxAgendamentosController">
+<AnchorPane fx:id="vboxEntregas" prefHeight="655.0" prefWidth="180.0" stylesheets="@../css/Menu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.VboxAgendamentosController">
    <children>
-      <VBox prefHeight="620.0" prefWidth="170.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button fx:id="btnEntregas" mnemonicParsing="false" onAction="#painelEntregas" prefHeight="50.0" prefWidth="150.0" styleClass="botoes" text="Entregas">
+            <Button fx:id="btnEntregas" mnemonicParsing="false" onAction="#painelEntregas" prefHeight="60.0" prefWidth="160.0" styleClass="botoes" text="Entregas">
                <VBox.margin>
-                  <Insets left="5.0" right="15.0" top="150.0" />
+                  <Insets right="20.0" top="120.0" />
                </VBox.margin>
                <graphic>
                   <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
@@ -23,17 +23,17 @@
                   </ImageView>
                </graphic>
             </Button>
-            <ImageView fitHeight="113.0" fitWidth="196.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="120.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../Downloads/Slider/src/sample/Images/logo.png" />
                </image>
                <VBox.margin>
-                  <Insets top="50.0" />
+                  <Insets top="60.0" />
                </VBox.margin>
             </ImageView>
-            <Button fx:id="btnDefesas" mnemonicParsing="false" onAction="#painelDefesas" prefHeight="50.0" prefWidth="150.0" styleClass="botoes" text="Defesas">
+            <Button fx:id="btnDefesas" mnemonicParsing="false" onAction="#painelDefesas" prefHeight="60.0" prefWidth="160.0" styleClass="botoes" text="Defesas">
                <VBox.margin>
-                  <Insets left="5.0" right="15.0" top="50.0" />
+                  <Insets right="20.0" top="60.0" />
                </VBox.margin>
                <graphic>
                   <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
