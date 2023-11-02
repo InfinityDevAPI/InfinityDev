@@ -18,6 +18,8 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 
+import application.controller.CorrecaoCSV;
+
 public class HomeController {
 	
 
@@ -145,4 +147,6 @@ public class HomeController {
         alerta.setHeaderText(cabecalho);
         alerta.showAndWait();
     }
+
+    
 }

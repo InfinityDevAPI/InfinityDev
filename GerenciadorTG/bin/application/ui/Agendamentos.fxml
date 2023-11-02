@@ -5,15 +5,15 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AgendamentosController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AgendamentosController">
    <children>
-      <ImageView fitHeight="720.0" fitWidth="1280.0" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView fitHeight="647.0" fitWidth="1150.0" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../imagens/Agendamentos.png" />
          </image>
       </ImageView>
-      <Button fx:id="botaoEntregas" layoutX="1024.0" layoutY="185.0" minHeight="40.0" mnemonicParsing="false" onMouseClicked="#abrirEntregas" opacity="0.0" prefHeight="40.0" prefWidth="184.0" style="-fx-background-radius: 20px; -fx-background-color: green;" />
-      <Button fx:id="botaoDefesasTG" layoutX="1024.0" layoutY="495.0" minHeight="40.0" minWidth="184.0" mnemonicParsing="false" onMouseClicked="#abrirDefesasTG" opacity="0.0" prefHeight="40.0" prefWidth="184.0" style="-fx-background-radius: 20px; -fx-background-color: green;" />
-      <Button fx:id="botaoHome" layoutX="1078.0" layoutY="324.0" minHeight="40.0" minWidth="40.0" mnemonicParsing="false" onMouseClicked="#abrirHome" opacity="0.0" prefHeight="72.0" prefWidth="76.0" style="-fx-background-color: green;" />
+      <Button fx:id="botaoEntregas" layoutX="921.0" layoutY="165.0" minHeight="38.0" mnemonicParsing="false" onMouseClicked="#abrirEntregas" opacity="0.0" prefHeight="38.0" prefWidth="164.0" style="-fx-background-radius: 20px; -fx-background-color: green;" text="Entregas" />
+      <Button fx:id="botaoDefesasTG" layoutX="921.0" layoutY="443.0" minHeight="37.0" minWidth="164.0" mnemonicParsing="false" onMouseClicked="#abrirDefesasTG" opacity="0.0" prefHeight="37.0" prefWidth="164.0" style="-fx-background-radius: 20px; -fx-background-color: green;" text="DefesasTG" />
+      <Button fx:id="botaoHome" layoutX="969.0" layoutY="291.0" minHeight="40.0" minWidth="40.0" mnemonicParsing="false" onMouseClicked="#abrirHome" opacity="0.0" prefHeight="64.0" prefWidth="68.0" style="-fx-background-color: green;" text="Home" />
    </children>
 </AnchorPane>
