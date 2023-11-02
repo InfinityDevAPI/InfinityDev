@@ -1,0 +1,14 @@
+/* CSS */
+
+.borderPane {
+    -fx-background-color: black;
+}
+
+.textosIniciais {
+    -fx-text-fill: white;
+    -jfx-focus-color: #00FF00;
+}
+
+
+
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */

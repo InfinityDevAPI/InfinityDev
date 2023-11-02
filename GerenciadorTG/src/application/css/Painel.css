@@ -1,0 +1,69 @@
+/* CSS */
+
+.menuItem:hover{
+    -fx-border-color: #660099;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+
+.sidebarItem:hover{
+    -fx-background-color: rgba(102, 204, 255, 0.3); /* Azul claro com 70% de transparência */
+    -fx-border-color: WHITE;
+    -fx-border-width: 0px 0px 0px 3px;
+}
+
+.mainpanel {
+    -fx-background-color: white;
+    -fx-background-radius: 5; /* Raio para bordas arredondadas */
+    -fx-border-radius: 5; /* Raio para bordas arredondadas */
+    -fx-border-color: black; /* Cor da borda */
+    -fx-border-width: 2px; /* Largura da borda */
+}
+
+.borderPane {
+    -fx-background-color: white;
+    -fx-background-radius: 5; /* Raio para bordas arredondadas */
+    -fx-border-radius: 5; /* Raio para bordas arredondadas */
+    -fx-border-color: grey; /* Cor da borda */
+    -fx-border-width: 1px; /* Largura da borda */
+}
+
+.vbox-left {
+    -fx-background-color: linear-gradient(to right, #00FF00, #007F00); /* Gradiente de verde */
+    -fx-border-width: 10px; /* Largura da borda */
+    -fx-border-color: linear-gradient(to right, #007F00, #00FF00); /* Gradiente para o efeito de profundidade */
+    -fx-border-radius: 10px; /* Raio para curvatura da borda */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 10, 0, 0, 0); /* Sombra para efeito 3D */
+    -fx-background-radius: 10px; /* Raio para curvatura da borda */
+}
+
+.paneTop {
+	-fx-background-color: linear-gradient(to right, #00FF00 0%, #FFFFFF 50%, #00FF00 100%);
+    -fx-border-width: 2px; /* Largura da borda */
+    -fx-border-color: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 10, 0, 0, 0); /* Sombra para efeito 3D */
+    -fx-background-radius: 3px; /* Raio para curvatura da borda */
+}
+
+.textoHome {
+    -fx-text-fill: black;
+    -jfx-focus-color: #00FF00;
+}
+
+.btnCSV {
+    -fx-background-color: linear-gradient(to bottom, #00FF00, #007F00);
+    -fx-background-radius: 10px;
+    -fx-border-color: #005700;
+    -fx-border-width: 2px;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 0, 0);
+}
+
+.btnCSV:hover {
+    -fx-background-color: linear-gradient(to bottom, #007F00, #00FF00);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 8, 0, 0, 0);
+}
+
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */

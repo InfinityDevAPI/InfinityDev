@@ -1,0 +1,35 @@
+/* CSS */
+
+.botoes {
+-fx-background-color:
+        linear-gradient(#00FF00, #007F00),
+        linear-gradient(#00FF00, #007F00),
+        linear-gradient(#00FF00, #007F00),
+        linear-gradient(#00FF00, #007F00),
+        linear-gradient(#00FF00, #007F00),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+-fx-background-radius: 30;
+-fx-background-insets: 0, 1, 2, 3, 4, 0;
+-fx-text-fill: #FFFFFF;
+-fx-font-weight: bold;
+-fx-font-size: 14px;
+-fx-padding: 10 20 10 20;
+}
+
+.botoes:hover {
+    -fx-background-color:
+            linear-gradient(#e68400, #ffd65b),
+            linear-gradient(#f2ba44, #ffef84),
+            linear-gradient(#efaa22, #ffea6a),
+            linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+            linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+}
+
+
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
